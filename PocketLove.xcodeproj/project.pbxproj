@@ -1,0 +1,486 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5C1B906A1916FB6600293400 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C1B90691916FB6600293400 /* Foundation.framework */; };
+		5C1B906C1916FB6700293400 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C1B906B1916FB6700293400 /* CoreGraphics.framework */; };
+		5C1B906E1916FB6700293400 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C1B906D1916FB6700293400 /* UIKit.framework */; };
+		5C1B90741916FB6700293400 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5C1B90721916FB6700293400 /* InfoPlist.strings */; };
+		5C1B90761916FB6700293400 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C1B90751916FB6700293400 /* main.m */; };
+		5C1B907A1916FB6700293400 /* PLAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C1B90791916FB6700293400 /* PLAppDelegate.m */; };
+		5C1B907D1916FB6700293400 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5C1B907B1916FB6700293400 /* Main_iPhone.storyboard */; };
+		5C1B90801916FB6700293400 /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5C1B907E1916FB6700293400 /* Main_iPad.storyboard */; };
+		5C1B90831916FB6700293400 /* PLViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C1B90821916FB6700293400 /* PLViewController.m */; };
+		5C1B90851916FB6700293400 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5C1B90841916FB6700293400 /* Images.xcassets */; };
+		5C1B908C1916FB6700293400 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C1B908B1916FB6700293400 /* XCTest.framework */; };
+		5C1B908D1916FB6700293400 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C1B90691916FB6600293400 /* Foundation.framework */; };
+		5C1B908E1916FB6700293400 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C1B906D1916FB6700293400 /* UIKit.framework */; };
+		5C1B90961916FB6700293400 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5C1B90941916FB6700293400 /* InfoPlist.strings */; };
+		5C1B90981916FB6700293400 /* PocketLoveTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C1B90971916FB6700293400 /* PocketLoveTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5C1B908F1916FB6700293400 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5C1B905E1916FB6600293400 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5C1B90651916FB6600293400;
+			remoteInfo = PocketLove;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		5C1B90661916FB6600293400 /* PocketLove.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PocketLove.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5C1B90691916FB6600293400 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		5C1B906B1916FB6700293400 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		5C1B906D1916FB6700293400 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		5C1B90711916FB6700293400 /* PocketLove-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PocketLove-Info.plist"; sourceTree = "<group>"; };
+		5C1B90731916FB6700293400 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		5C1B90751916FB6700293400 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		5C1B90771916FB6700293400 /* PocketLove-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PocketLove-Prefix.pch"; sourceTree = "<group>"; };
+		5C1B90781916FB6700293400 /* PLAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PLAppDelegate.h; sourceTree = "<group>"; };
+		5C1B90791916FB6700293400 /* PLAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PLAppDelegate.m; sourceTree = "<group>"; };
+		5C1B907C1916FB6700293400 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
+		5C1B907F1916FB6700293400 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
+		5C1B90811916FB6700293400 /* PLViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PLViewController.h; sourceTree = "<group>"; };
+		5C1B90821916FB6700293400 /* PLViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PLViewController.m; sourceTree = "<group>"; };
+		5C1B90841916FB6700293400 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		5C1B908A1916FB6700293400 /* PocketLoveTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PocketLoveTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5C1B908B1916FB6700293400 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		5C1B90931916FB6700293400 /* PocketLoveTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PocketLoveTests-Info.plist"; sourceTree = "<group>"; };
+		5C1B90951916FB6700293400 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		5C1B90971916FB6700293400 /* PocketLoveTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PocketLoveTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5C1B90631916FB6600293400 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5C1B906C1916FB6700293400 /* CoreGraphics.framework in Frameworks */,
+				5C1B906E1916FB6700293400 /* UIKit.framework in Frameworks */,
+				5C1B906A1916FB6600293400 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5C1B90871916FB6700293400 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5C1B908C1916FB6700293400 /* XCTest.framework in Frameworks */,
+				5C1B908E1916FB6700293400 /* UIKit.framework in Frameworks */,
+				5C1B908D1916FB6700293400 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5C1B905D1916FB6600293400 = {
+			isa = PBXGroup;
+			children = (
+				5C1B906F1916FB6700293400 /* PocketLove */,
+				5C1B90911916FB6700293400 /* PocketLoveTests */,
+				5C1B90681916FB6600293400 /* Frameworks */,
+				5C1B90671916FB6600293400 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5C1B90671916FB6600293400 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5C1B90661916FB6600293400 /* PocketLove.app */,
+				5C1B908A1916FB6700293400 /* PocketLoveTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5C1B90681916FB6600293400 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5C1B90691916FB6600293400 /* Foundation.framework */,
+				5C1B906B1916FB6700293400 /* CoreGraphics.framework */,
+				5C1B906D1916FB6700293400 /* UIKit.framework */,
+				5C1B908B1916FB6700293400 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5C1B906F1916FB6700293400 /* PocketLove */ = {
+			isa = PBXGroup;
+			children = (
+				5C1B90781916FB6700293400 /* PLAppDelegate.h */,
+				5C1B90791916FB6700293400 /* PLAppDelegate.m */,
+				5C1B907B1916FB6700293400 /* Main_iPhone.storyboard */,
+				5C1B907E1916FB6700293400 /* Main_iPad.storyboard */,
+				5C1B90811916FB6700293400 /* PLViewController.h */,
+				5C1B90821916FB6700293400 /* PLViewController.m */,
+				5C1B90841916FB6700293400 /* Images.xcassets */,
+				5C1B90701916FB6700293400 /* Supporting Files */,
+			);
+			path = PocketLove;
+			sourceTree = "<group>";
+		};
+		5C1B90701916FB6700293400 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5C1B90711916FB6700293400 /* PocketLove-Info.plist */,
+				5C1B90721916FB6700293400 /* InfoPlist.strings */,
+				5C1B90751916FB6700293400 /* main.m */,
+				5C1B90771916FB6700293400 /* PocketLove-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		5C1B90911916FB6700293400 /* PocketLoveTests */ = {
+			isa = PBXGroup;
+			children = (
+				5C1B90971916FB6700293400 /* PocketLoveTests.m */,
+				5C1B90921916FB6700293400 /* Supporting Files */,
+			);
+			path = PocketLoveTests;
+			sourceTree = "<group>";
+		};
+		5C1B90921916FB6700293400 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5C1B90931916FB6700293400 /* PocketLoveTests-Info.plist */,
+				5C1B90941916FB6700293400 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5C1B90651916FB6600293400 /* PocketLove */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5C1B909B1916FB6700293400 /* Build configuration list for PBXNativeTarget "PocketLove" */;
+			buildPhases = (
+				5C1B90621916FB6600293400 /* Sources */,
+				5C1B90631916FB6600293400 /* Frameworks */,
+				5C1B90641916FB6600293400 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PocketLove;
+			productName = PocketLove;
+			productReference = 5C1B90661916FB6600293400 /* PocketLove.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5C1B90891916FB6700293400 /* PocketLoveTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5C1B909E1916FB6700293400 /* Build configuration list for PBXNativeTarget "PocketLoveTests" */;
+			buildPhases = (
+				5C1B90861916FB6700293400 /* Sources */,
+				5C1B90871916FB6700293400 /* Frameworks */,
+				5C1B90881916FB6700293400 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5C1B90901916FB6700293400 /* PBXTargetDependency */,
+			);
+			name = PocketLoveTests;
+			productName = PocketLoveTests;
+			productReference = 5C1B908A1916FB6700293400 /* PocketLoveTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5C1B905E1916FB6600293400 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = PL;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Johan Ismael";
+				TargetAttributes = {
+					5C1B90891916FB6700293400 = {
+						TestTargetID = 5C1B90651916FB6600293400;
+					};
+				};
+			};
+			buildConfigurationList = 5C1B90611916FB6600293400 /* Build configuration list for PBXProject "PocketLove" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5C1B905D1916FB6600293400;
+			productRefGroup = 5C1B90671916FB6600293400 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5C1B90651916FB6600293400 /* PocketLove */,
+				5C1B90891916FB6700293400 /* PocketLoveTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5C1B90641916FB6600293400 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5C1B90801916FB6700293400 /* Main_iPad.storyboard in Resources */,
+				5C1B90851916FB6700293400 /* Images.xcassets in Resources */,
+				5C1B907D1916FB6700293400 /* Main_iPhone.storyboard in Resources */,
+				5C1B90741916FB6700293400 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5C1B90881916FB6700293400 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5C1B90961916FB6700293400 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5C1B90621916FB6600293400 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5C1B907A1916FB6700293400 /* PLAppDelegate.m in Sources */,
+				5C1B90831916FB6700293400 /* PLViewController.m in Sources */,
+				5C1B90761916FB6700293400 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5C1B90861916FB6700293400 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5C1B90981916FB6700293400 /* PocketLoveTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5C1B90901916FB6700293400 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5C1B90651916FB6600293400 /* PocketLove */;
+			targetProxy = 5C1B908F1916FB6700293400 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		5C1B90721916FB6700293400 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5C1B90731916FB6700293400 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		5C1B907B1916FB6700293400 /* Main_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5C1B907C1916FB6700293400 /* Base */,
+			);
+			name = Main_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		5C1B907E1916FB6700293400 /* Main_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5C1B907F1916FB6700293400 /* Base */,
+			);
+			name = Main_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+		5C1B90941916FB6700293400 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5C1B90951916FB6700293400 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5C1B90991916FB6700293400 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5C1B909A1916FB6700293400 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5C1B909C1916FB6700293400 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PocketLove/PocketLove-Prefix.pch";
+				INFOPLIST_FILE = "PocketLove/PocketLove-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		5C1B909D1916FB6700293400 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PocketLove/PocketLove-Prefix.pch";
+				INFOPLIST_FILE = "PocketLove/PocketLove-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		5C1B909F1916FB6700293400 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/PocketLove.app/PocketLove";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PocketLove/PocketLove-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "PocketLoveTests/PocketLoveTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		5C1B90A01916FB6700293400 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/PocketLove.app/PocketLove";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PocketLove/PocketLove-Prefix.pch";
+				INFOPLIST_FILE = "PocketLoveTests/PocketLoveTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5C1B90611916FB6600293400 /* Build configuration list for PBXProject "PocketLove" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5C1B90991916FB6700293400 /* Debug */,
+				5C1B909A1916FB6700293400 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5C1B909B1916FB6700293400 /* Build configuration list for PBXNativeTarget "PocketLove" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5C1B909C1916FB6700293400 /* Debug */,
+				5C1B909D1916FB6700293400 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		5C1B909E1916FB6700293400 /* Build configuration list for PBXNativeTarget "PocketLoveTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5C1B909F1916FB6700293400 /* Debug */,
+				5C1B90A01916FB6700293400 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5C1B905E1916FB6600293400 /* Project object */;
+}
