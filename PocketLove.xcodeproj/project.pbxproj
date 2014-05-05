@@ -15,13 +15,17 @@
 		5C1B907A1916FB6700293400 /* PLAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C1B90791916FB6700293400 /* PLAppDelegate.m */; };
 		5C1B907D1916FB6700293400 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5C1B907B1916FB6700293400 /* Main_iPhone.storyboard */; };
 		5C1B90801916FB6700293400 /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5C1B907E1916FB6700293400 /* Main_iPad.storyboard */; };
-		5C1B90831916FB6700293400 /* PLViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C1B90821916FB6700293400 /* PLViewController.m */; };
 		5C1B90851916FB6700293400 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5C1B90841916FB6700293400 /* Images.xcassets */; };
 		5C1B908C1916FB6700293400 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C1B908B1916FB6700293400 /* XCTest.framework */; };
 		5C1B908D1916FB6700293400 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C1B90691916FB6600293400 /* Foundation.framework */; };
 		5C1B908E1916FB6700293400 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C1B906D1916FB6700293400 /* UIKit.framework */; };
 		5C1B90961916FB6700293400 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5C1B90941916FB6700293400 /* InfoPlist.strings */; };
 		5C1B90981916FB6700293400 /* PocketLoveTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C1B90971916FB6700293400 /* PocketLoveTests.m */; };
+		5C1B90A21916FC5600293400 /* SpriteKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C1B90A11916FC5600293400 /* SpriteKit.framework */; };
+		5C1B90EF1917028300293400 /* PLCharacterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C1B90EE1917028300293400 /* PLCharacterViewController.m */; };
+		5C1B90F2191702AE00293400 /* PLMyCharacterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C1B90F1191702AE00293400 /* PLMyCharacterViewController.m */; };
+		5C1B90F5191702CE00293400 /* PLOtherCharacterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C1B90F4191702CE00293400 /* PLOtherCharacterViewController.m */; };
+		5C1B90F8191707B100293400 /* PLRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C1B90F7191707B100293400 /* PLRootViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,14 +51,21 @@
 		5C1B90791916FB6700293400 /* PLAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PLAppDelegate.m; sourceTree = "<group>"; };
 		5C1B907C1916FB6700293400 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
 		5C1B907F1916FB6700293400 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
-		5C1B90811916FB6700293400 /* PLViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PLViewController.h; sourceTree = "<group>"; };
-		5C1B90821916FB6700293400 /* PLViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PLViewController.m; sourceTree = "<group>"; };
 		5C1B90841916FB6700293400 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		5C1B908A1916FB6700293400 /* PocketLoveTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PocketLoveTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C1B908B1916FB6700293400 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		5C1B90931916FB6700293400 /* PocketLoveTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PocketLoveTests-Info.plist"; sourceTree = "<group>"; };
 		5C1B90951916FB6700293400 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		5C1B90971916FB6700293400 /* PocketLoveTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PocketLoveTests.m; sourceTree = "<group>"; };
+		5C1B90A11916FC5600293400 /* SpriteKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SpriteKit.framework; path = System/Library/Frameworks/SpriteKit.framework; sourceTree = SDKROOT; };
+		5C1B90ED1917028300293400 /* PLCharacterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PLCharacterViewController.h; sourceTree = "<group>"; };
+		5C1B90EE1917028300293400 /* PLCharacterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PLCharacterViewController.m; sourceTree = "<group>"; };
+		5C1B90F0191702AE00293400 /* PLMyCharacterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PLMyCharacterViewController.h; sourceTree = "<group>"; };
+		5C1B90F1191702AE00293400 /* PLMyCharacterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PLMyCharacterViewController.m; sourceTree = "<group>"; };
+		5C1B90F3191702CE00293400 /* PLOtherCharacterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PLOtherCharacterViewController.h; sourceTree = "<group>"; };
+		5C1B90F4191702CE00293400 /* PLOtherCharacterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PLOtherCharacterViewController.m; sourceTree = "<group>"; };
+		5C1B90F6191707B100293400 /* PLRootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PLRootViewController.h; sourceTree = "<group>"; };
+		5C1B90F7191707B100293400 /* PLRootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PLRootViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +73,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5C1B90A21916FC5600293400 /* SpriteKit.framework in Frameworks */,
 				5C1B906C1916FB6700293400 /* CoreGraphics.framework in Frameworks */,
 				5C1B906E1916FB6700293400 /* UIKit.framework in Frameworks */,
 				5C1B906A1916FB6600293400 /* Foundation.framework in Frameworks */,
@@ -103,6 +115,7 @@
 		5C1B90681916FB6600293400 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				5C1B90A11916FC5600293400 /* SpriteKit.framework */,
 				5C1B90691916FB6600293400 /* Foundation.framework */,
 				5C1B906B1916FB6700293400 /* CoreGraphics.framework */,
 				5C1B906D1916FB6700293400 /* UIKit.framework */,
@@ -114,12 +127,18 @@
 		5C1B906F1916FB6700293400 /* PocketLove */ = {
 			isa = PBXGroup;
 			children = (
-				5C1B90781916FB6700293400 /* PLAppDelegate.h */,
-				5C1B90791916FB6700293400 /* PLAppDelegate.m */,
 				5C1B907B1916FB6700293400 /* Main_iPhone.storyboard */,
 				5C1B907E1916FB6700293400 /* Main_iPad.storyboard */,
-				5C1B90811916FB6700293400 /* PLViewController.h */,
-				5C1B90821916FB6700293400 /* PLViewController.m */,
+				5C1B90781916FB6700293400 /* PLAppDelegate.h */,
+				5C1B90791916FB6700293400 /* PLAppDelegate.m */,
+				5C1B90ED1917028300293400 /* PLCharacterViewController.h */,
+				5C1B90EE1917028300293400 /* PLCharacterViewController.m */,
+				5C1B90F0191702AE00293400 /* PLMyCharacterViewController.h */,
+				5C1B90F1191702AE00293400 /* PLMyCharacterViewController.m */,
+				5C1B90F3191702CE00293400 /* PLOtherCharacterViewController.h */,
+				5C1B90F4191702CE00293400 /* PLOtherCharacterViewController.m */,
+				5C1B90F6191707B100293400 /* PLRootViewController.h */,
+				5C1B90F7191707B100293400 /* PLRootViewController.m */,
 				5C1B90841916FB6700293400 /* Images.xcassets */,
 				5C1B90701916FB6700293400 /* Supporting Files */,
 			);
@@ -255,7 +274,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				5C1B907A1916FB6700293400 /* PLAppDelegate.m in Sources */,
-				5C1B90831916FB6700293400 /* PLViewController.m in Sources */,
+				5C1B90F5191702CE00293400 /* PLOtherCharacterViewController.m in Sources */,
+				5C1B90F8191707B100293400 /* PLRootViewController.m in Sources */,
+				5C1B90F2191702AE00293400 /* PLMyCharacterViewController.m in Sources */,
+				5C1B90EF1917028300293400 /* PLCharacterViewController.m in Sources */,
 				5C1B90761916FB6700293400 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -1,5 +1,5 @@
 //
-//  PLViewController.h
+//  PLCharacterViewController.h
 //  PocketLove
 //
 //  Created by Johan Ismael on 5/4/14.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface PLViewController : UIViewController
+@interface PLCharacterViewController : UIViewController
 
 @end
