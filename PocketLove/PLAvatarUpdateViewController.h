@@ -1,5 +1,5 @@
 //
-//  PLCharacterViewController.h
+//  PLAvatarUpdateViewController.h
 //  PocketLove
 //
 //  Created by Johan Ismael on 5/4/14.
@@ -8,9 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface PLCharacterViewController : UIViewController
-
-//abstract methods
-- (NSDate *)currentTime;
+@interface PLAvatarUpdateViewController : UIViewController
 
 @end

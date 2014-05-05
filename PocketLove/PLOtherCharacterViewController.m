@@ -14,4 +14,12 @@
 
 @implementation PLOtherCharacterViewController
 
+- (NSDate *)currentTime
+{
+    NSDate *now = [NSDate date];
+    
+    //3 hours before now
+    return [now dateByAddingTimeInterval:-3*60*60];
+}
+
 @end

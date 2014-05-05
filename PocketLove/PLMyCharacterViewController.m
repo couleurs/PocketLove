@@ -14,4 +14,16 @@
 
 @implementation PLMyCharacterViewController
 
+- (NSDate *)currentTime
+{
+    return [NSDate date];
+}
+
+#pragma mark - Segues
+
+- (IBAction)avatarUpdated:(UIStoryboardSegue *)segue
+{
+    
+}
+
 @end

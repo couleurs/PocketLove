@@ -26,6 +26,8 @@
 		5C1B90F2191702AE00293400 /* PLMyCharacterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C1B90F1191702AE00293400 /* PLMyCharacterViewController.m */; };
 		5C1B90F5191702CE00293400 /* PLOtherCharacterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C1B90F4191702CE00293400 /* PLOtherCharacterViewController.m */; };
 		5C1B90F8191707B100293400 /* PLRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C1B90F7191707B100293400 /* PLRootViewController.m */; };
+		5C428C4319171163008D12A8 /* pixelated.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5C428C4219171163008D12A8 /* pixelated.ttf */; };
+		5C428C4619171736008D12A8 /* PLAvatarUpdateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C428C4519171736008D12A8 /* PLAvatarUpdateViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +68,9 @@
 		5C1B90F4191702CE00293400 /* PLOtherCharacterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PLOtherCharacterViewController.m; sourceTree = "<group>"; };
 		5C1B90F6191707B100293400 /* PLRootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PLRootViewController.h; sourceTree = "<group>"; };
 		5C1B90F7191707B100293400 /* PLRootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PLRootViewController.m; sourceTree = "<group>"; };
+		5C428C4219171163008D12A8 /* pixelated.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = pixelated.ttf; sourceTree = "<group>"; };
+		5C428C4419171736008D12A8 /* PLAvatarUpdateViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PLAvatarUpdateViewController.h; sourceTree = "<group>"; };
+		5C428C4519171736008D12A8 /* PLAvatarUpdateViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PLAvatarUpdateViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,10 +132,13 @@
 		5C1B906F1916FB6700293400 /* PocketLove */ = {
 			isa = PBXGroup;
 			children = (
-				5C1B907B1916FB6700293400 /* Main_iPhone.storyboard */,
+				5C428C411917114F008D12A8 /* Resources */,
 				5C1B907E1916FB6700293400 /* Main_iPad.storyboard */,
+				5C1B907B1916FB6700293400 /* Main_iPhone.storyboard */,
 				5C1B90781916FB6700293400 /* PLAppDelegate.h */,
 				5C1B90791916FB6700293400 /* PLAppDelegate.m */,
+				5C428C4419171736008D12A8 /* PLAvatarUpdateViewController.h */,
+				5C428C4519171736008D12A8 /* PLAvatarUpdateViewController.m */,
 				5C1B90ED1917028300293400 /* PLCharacterViewController.h */,
 				5C1B90EE1917028300293400 /* PLCharacterViewController.m */,
 				5C1B90F0191702AE00293400 /* PLMyCharacterViewController.h */,
@@ -172,6 +180,14 @@
 				5C1B90941916FB6700293400 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		5C428C411917114F008D12A8 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				5C428C4219171163008D12A8 /* pixelated.ttf */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -253,6 +269,7 @@
 			files = (
 				5C1B90801916FB6700293400 /* Main_iPad.storyboard in Resources */,
 				5C1B90851916FB6700293400 /* Images.xcassets in Resources */,
+				5C428C4319171163008D12A8 /* pixelated.ttf in Resources */,
 				5C1B907D1916FB6700293400 /* Main_iPhone.storyboard in Resources */,
 				5C1B90741916FB6700293400 /* InfoPlist.strings in Resources */,
 			);
@@ -273,6 +290,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5C428C4619171736008D12A8 /* PLAvatarUpdateViewController.m in Sources */,
 				5C1B907A1916FB6700293400 /* PLAppDelegate.m in Sources */,
 				5C1B90F5191702CE00293400 /* PLOtherCharacterViewController.m in Sources */,
 				5C1B90F8191707B100293400 /* PLRootViewController.m in Sources */,
@@ -493,6 +511,7 @@
 				5C1B909D1916FB6700293400 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5C1B909E1916FB6700293400 /* Build configuration list for PBXNativeTarget "PocketLoveTests" */ = {
 			isa = XCConfigurationList;
@@ -501,6 +520,7 @@
 				5C1B90A01916FB6700293400 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
