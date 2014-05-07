@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Avatar.h"
 
 @interface PLAvatarUpdateViewController : UIViewController
+
+@property (nonatomic, strong) Avatar *avatar;
 
 @end

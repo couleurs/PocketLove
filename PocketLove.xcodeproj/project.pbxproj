@@ -13,8 +13,6 @@
 		5C1B90741916FB6700293400 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5C1B90721916FB6700293400 /* InfoPlist.strings */; };
 		5C1B90761916FB6700293400 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C1B90751916FB6700293400 /* main.m */; };
 		5C1B907A1916FB6700293400 /* PLAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C1B90791916FB6700293400 /* PLAppDelegate.m */; };
-		5C1B907D1916FB6700293400 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5C1B907B1916FB6700293400 /* Main_iPhone.storyboard */; };
-		5C1B90801916FB6700293400 /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5C1B907E1916FB6700293400 /* Main_iPad.storyboard */; };
 		5C1B90851916FB6700293400 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5C1B90841916FB6700293400 /* Images.xcassets */; };
 		5C1B908C1916FB6700293400 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C1B908B1916FB6700293400 /* XCTest.framework */; };
 		5C1B908D1916FB6700293400 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C1B90691916FB6600293400 /* Foundation.framework */; };
@@ -28,6 +26,10 @@
 		5C1B90F8191707B100293400 /* PLRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C1B90F7191707B100293400 /* PLRootViewController.m */; };
 		5C428C4319171163008D12A8 /* pixelated.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5C428C4219171163008D12A8 /* pixelated.ttf */; };
 		5C428C4619171736008D12A8 /* PLAvatarUpdateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C428C4519171736008D12A8 /* PLAvatarUpdateViewController.m */; };
+		5CA188931919E444001130BB /* Avatar.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CA188921919E444001130BB /* Avatar.m */; };
+		5CA188951919EE84001130BB /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5CA188941919EE84001130BB /* QuartzCore.framework */; };
+		5CA188981919F165001130BB /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5CA188961919F165001130BB /* Main_iPhone.storyboard */; };
+		5CA1889C1919F29E001130BB /* ImageCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CA1889B1919F29E001130BB /* ImageCollectionViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,8 +53,6 @@
 		5C1B90771916FB6700293400 /* PocketLove-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PocketLove-Prefix.pch"; sourceTree = "<group>"; };
 		5C1B90781916FB6700293400 /* PLAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PLAppDelegate.h; sourceTree = "<group>"; };
 		5C1B90791916FB6700293400 /* PLAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PLAppDelegate.m; sourceTree = "<group>"; };
-		5C1B907C1916FB6700293400 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
-		5C1B907F1916FB6700293400 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
 		5C1B90841916FB6700293400 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		5C1B908A1916FB6700293400 /* PocketLoveTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PocketLoveTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C1B908B1916FB6700293400 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
@@ -71,6 +71,12 @@
 		5C428C4219171163008D12A8 /* pixelated.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = pixelated.ttf; sourceTree = "<group>"; };
 		5C428C4419171736008D12A8 /* PLAvatarUpdateViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PLAvatarUpdateViewController.h; sourceTree = "<group>"; };
 		5C428C4519171736008D12A8 /* PLAvatarUpdateViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PLAvatarUpdateViewController.m; sourceTree = "<group>"; };
+		5CA188911919E444001130BB /* Avatar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Avatar.h; sourceTree = "<group>"; };
+		5CA188921919E444001130BB /* Avatar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Avatar.m; sourceTree = "<group>"; };
+		5CA188941919EE84001130BB /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		5CA188971919F165001130BB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
+		5CA1889A1919F29E001130BB /* ImageCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageCollectionViewCell.h; sourceTree = "<group>"; };
+		5CA1889B1919F29E001130BB /* ImageCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageCollectionViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +84,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5CA188951919EE84001130BB /* QuartzCore.framework in Frameworks */,
 				5C1B90A21916FC5600293400 /* SpriteKit.framework in Frameworks */,
 				5C1B906C1916FB6700293400 /* CoreGraphics.framework in Frameworks */,
 				5C1B906E1916FB6700293400 /* UIKit.framework in Frameworks */,
@@ -120,6 +127,7 @@
 		5C1B90681916FB6600293400 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				5CA188941919EE84001130BB /* QuartzCore.framework */,
 				5C1B90A11916FC5600293400 /* SpriteKit.framework */,
 				5C1B90691916FB6600293400 /* Foundation.framework */,
 				5C1B906B1916FB6700293400 /* CoreGraphics.framework */,
@@ -132,21 +140,11 @@
 		5C1B906F1916FB6700293400 /* PocketLove */ = {
 			isa = PBXGroup;
 			children = (
+				5CA188991919F25C001130BB /* Views */,
+				5CA188901919E426001130BB /* Model */,
+				5CA1888F1919E420001130BB /* Controllers */,
 				5C428C411917114F008D12A8 /* Resources */,
-				5C1B907E1916FB6700293400 /* Main_iPad.storyboard */,
-				5C1B907B1916FB6700293400 /* Main_iPhone.storyboard */,
-				5C1B90781916FB6700293400 /* PLAppDelegate.h */,
-				5C1B90791916FB6700293400 /* PLAppDelegate.m */,
-				5C428C4419171736008D12A8 /* PLAvatarUpdateViewController.h */,
-				5C428C4519171736008D12A8 /* PLAvatarUpdateViewController.m */,
-				5C1B90ED1917028300293400 /* PLCharacterViewController.h */,
-				5C1B90EE1917028300293400 /* PLCharacterViewController.m */,
-				5C1B90F0191702AE00293400 /* PLMyCharacterViewController.h */,
-				5C1B90F1191702AE00293400 /* PLMyCharacterViewController.m */,
-				5C1B90F3191702CE00293400 /* PLOtherCharacterViewController.h */,
-				5C1B90F4191702CE00293400 /* PLOtherCharacterViewController.m */,
-				5C1B90F6191707B100293400 /* PLRootViewController.h */,
-				5C1B90F7191707B100293400 /* PLRootViewController.m */,
+				5CA188961919F165001130BB /* Main_iPhone.storyboard */,
 				5C1B90841916FB6700293400 /* Images.xcassets */,
 				5C1B90701916FB6700293400 /* Supporting Files */,
 			);
@@ -156,6 +154,8 @@
 		5C1B90701916FB6700293400 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				5C1B90781916FB6700293400 /* PLAppDelegate.h */,
+				5C1B90791916FB6700293400 /* PLAppDelegate.m */,
 				5C1B90711916FB6700293400 /* PocketLove-Info.plist */,
 				5C1B90721916FB6700293400 /* InfoPlist.strings */,
 				5C1B90751916FB6700293400 /* main.m */,
@@ -188,6 +188,41 @@
 				5C428C4219171163008D12A8 /* pixelated.ttf */,
 			);
 			name = Resources;
+			sourceTree = "<group>";
+		};
+		5CA1888F1919E420001130BB /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				5C428C4419171736008D12A8 /* PLAvatarUpdateViewController.h */,
+				5C428C4519171736008D12A8 /* PLAvatarUpdateViewController.m */,
+				5C1B90ED1917028300293400 /* PLCharacterViewController.h */,
+				5C1B90EE1917028300293400 /* PLCharacterViewController.m */,
+				5C1B90F0191702AE00293400 /* PLMyCharacterViewController.h */,
+				5C1B90F1191702AE00293400 /* PLMyCharacterViewController.m */,
+				5C1B90F3191702CE00293400 /* PLOtherCharacterViewController.h */,
+				5C1B90F4191702CE00293400 /* PLOtherCharacterViewController.m */,
+				5C1B90F6191707B100293400 /* PLRootViewController.h */,
+				5C1B90F7191707B100293400 /* PLRootViewController.m */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		5CA188901919E426001130BB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				5CA188911919E444001130BB /* Avatar.h */,
+				5CA188921919E444001130BB /* Avatar.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		5CA188991919F25C001130BB /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				5CA1889A1919F29E001130BB /* ImageCollectionViewCell.h */,
+				5CA1889B1919F29E001130BB /* ImageCollectionViewCell.m */,
+			);
+			name = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -267,10 +302,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5C1B90801916FB6700293400 /* Main_iPad.storyboard in Resources */,
 				5C1B90851916FB6700293400 /* Images.xcassets in Resources */,
+				5CA188981919F165001130BB /* Main_iPhone.storyboard in Resources */,
 				5C428C4319171163008D12A8 /* pixelated.ttf in Resources */,
-				5C1B907D1916FB6700293400 /* Main_iPhone.storyboard in Resources */,
 				5C1B90741916FB6700293400 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -292,7 +326,9 @@
 			files = (
 				5C428C4619171736008D12A8 /* PLAvatarUpdateViewController.m in Sources */,
 				5C1B907A1916FB6700293400 /* PLAppDelegate.m in Sources */,
+				5CA188931919E444001130BB /* Avatar.m in Sources */,
 				5C1B90F5191702CE00293400 /* PLOtherCharacterViewController.m in Sources */,
+				5CA1889C1919F29E001130BB /* ImageCollectionViewCell.m in Sources */,
 				5C1B90F8191707B100293400 /* PLRootViewController.m in Sources */,
 				5C1B90F2191702AE00293400 /* PLMyCharacterViewController.m in Sources */,
 				5C1B90EF1917028300293400 /* PLCharacterViewController.m in Sources */,
@@ -327,28 +363,20 @@
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
-		5C1B907B1916FB6700293400 /* Main_iPhone.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				5C1B907C1916FB6700293400 /* Base */,
-			);
-			name = Main_iPhone.storyboard;
-			sourceTree = "<group>";
-		};
-		5C1B907E1916FB6700293400 /* Main_iPad.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				5C1B907F1916FB6700293400 /* Base */,
-			);
-			name = Main_iPad.storyboard;
-			sourceTree = "<group>";
-		};
 		5C1B90941916FB6700293400 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
 				5C1B90951916FB6700293400 /* en */,
 			);
 			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		5CA188961919F165001130BB /* Main_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5CA188971919F165001130BB /* Base */,
+			);
+			name = Main_iPhone.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -435,6 +463,7 @@
 				GCC_PREFIX_HEADER = "PocketLove/PocketLove-Prefix.pch";
 				INFOPLIST_FILE = "PocketLove/PocketLove-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -448,6 +477,7 @@
 				GCC_PREFIX_HEADER = "PocketLove/PocketLove-Prefix.pch";
 				INFOPLIST_FILE = "PocketLove/PocketLove-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

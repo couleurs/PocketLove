@@ -7,6 +7,7 @@
 //
 
 #import "PLMyCharacterViewController.h"
+#import "PLAvatarUpdateViewController.h"
 
 @interface PLMyCharacterViewController ()
 
@@ -21,9 +22,17 @@
 
 #pragma mark - Segues
 
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    if ([segue.identifier isEqualToString:@"UpdateAvatar"]) {
+        PLAvatarUpdateViewController *plauvc = (PLAvatarUpdateViewController *)segue.destinationViewController;
+        plauvc.avatar = self.avatar;
+    }
+}
+
+
 - (IBAction)avatarUpdated:(UIStoryboardSegue *)segue
 {
-    
 }
 
 @end

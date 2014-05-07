@@ -7,8 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Avatar.h"
 
 @interface PLCharacterViewController : UIViewController
+
+@property (strong, nonatomic) Avatar *avatar;
 
 //abstract methods
 - (NSDate *)currentTime;
