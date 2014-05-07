@@ -9,6 +9,7 @@
 #import "PLAvatarUpdateViewController.h"
 #import <QuartzCore/QuartzCore.h>
 #import "ImageCollectionViewCell.h"
+#import "PLConstants.h"
 
 @interface PLAvatarUpdateViewController () <UICollectionViewDataSource, UICollectionViewDelegate>
 
@@ -22,9 +23,8 @@
 - (NSMutableArray *)avatarMoodImages
 {
     if (!_avatarMoodImages) {
-        NSArray *moodStrings = @[@"Angry", @"Annoyed", @"Confused", @"Crying", @"Happy", @"Normal", @"Sad", @"Silly", @"Tired"];
         _avatarMoodImages = [[NSMutableArray alloc] init];
-        for (NSString *mood in moodStrings) {
+        for (NSString *mood in [PLConstants moodStrings]) {
             [_avatarMoodImages addObject:[UIImage imageNamed:[NSString stringWithFormat:@"Boy_Emotion_%@", mood]]];
         }
     }
@@ -35,8 +35,6 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    
-    self.view.backgroundColor = [UIColor colorWithRed:0 green:213/255.0 blue:255/255.0 alpha:1.0];
 }
 
 #pragma mark - UICollectionView protocols
@@ -69,6 +67,7 @@
         [collectionView deselectItemAtIndexPath:self.selectedIndexPath animated:YES];
     }
     
+    self.avatar.mood = indexPath.row;
     self.selectedIndexPath = indexPath;
 }
 

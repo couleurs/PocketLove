@@ -7,6 +7,7 @@
 //
 
 #import "PLAppDelegate.h"
+#import "PLConstants.h"
 
 @implementation PLAppDelegate
 
@@ -15,6 +16,7 @@
     // Override point for customization after application launch.
     [[UILabel appearance] setFont:[UIFont fontWithName:@"pixelated" size:32.0]];
     [[UILabel appearance] setTextColor:[UIColor whiteColor]];
+    [[UIView appearance] setBackgroundColor:[PLConstants backgroundColor]];
     return YES;
 }
 							

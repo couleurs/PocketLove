@@ -26,6 +26,7 @@
 		5C1B90F8191707B100293400 /* PLRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C1B90F7191707B100293400 /* PLRootViewController.m */; };
 		5C428C4319171163008D12A8 /* pixelated.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5C428C4219171163008D12A8 /* pixelated.ttf */; };
 		5C428C4619171736008D12A8 /* PLAvatarUpdateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C428C4519171736008D12A8 /* PLAvatarUpdateViewController.m */; };
+		5C846A05191ADF64001A25A0 /* PLConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C846A04191ADF64001A25A0 /* PLConstants.m */; };
 		5CA188931919E444001130BB /* Avatar.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CA188921919E444001130BB /* Avatar.m */; };
 		5CA188951919EE84001130BB /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5CA188941919EE84001130BB /* QuartzCore.framework */; };
 		5CA188981919F165001130BB /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5CA188961919F165001130BB /* Main_iPhone.storyboard */; };
@@ -71,6 +72,8 @@
 		5C428C4219171163008D12A8 /* pixelated.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = pixelated.ttf; sourceTree = "<group>"; };
 		5C428C4419171736008D12A8 /* PLAvatarUpdateViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PLAvatarUpdateViewController.h; sourceTree = "<group>"; };
 		5C428C4519171736008D12A8 /* PLAvatarUpdateViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PLAvatarUpdateViewController.m; sourceTree = "<group>"; };
+		5C846A03191ADF64001A25A0 /* PLConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PLConstants.h; sourceTree = "<group>"; };
+		5C846A04191ADF64001A25A0 /* PLConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PLConstants.m; sourceTree = "<group>"; };
 		5CA188911919E444001130BB /* Avatar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Avatar.h; sourceTree = "<group>"; };
 		5CA188921919E444001130BB /* Avatar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Avatar.m; sourceTree = "<group>"; };
 		5CA188941919EE84001130BB /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
@@ -140,6 +143,8 @@
 		5C1B906F1916FB6700293400 /* PocketLove */ = {
 			isa = PBXGroup;
 			children = (
+				5C846A03191ADF64001A25A0 /* PLConstants.h */,
+				5C846A04191ADF64001A25A0 /* PLConstants.m */,
 				5CA188991919F25C001130BB /* Views */,
 				5CA188901919E426001130BB /* Model */,
 				5CA1888F1919E420001130BB /* Controllers */,
@@ -329,6 +334,7 @@
 				5CA188931919E444001130BB /* Avatar.m in Sources */,
 				5C1B90F5191702CE00293400 /* PLOtherCharacterViewController.m in Sources */,
 				5CA1889C1919F29E001130BB /* ImageCollectionViewCell.m in Sources */,
+				5C846A05191ADF64001A25A0 /* PLConstants.m in Sources */,
 				5C1B90F8191707B100293400 /* PLRootViewController.m in Sources */,
 				5C1B90F2191702AE00293400 /* PLMyCharacterViewController.m in Sources */,
 				5C1B90EF1917028300293400 /* PLCharacterViewController.m in Sources */,
@@ -462,6 +468,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "PocketLove/PocketLove-Prefix.pch";
 				INFOPLIST_FILE = "PocketLove/PocketLove-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
@@ -476,6 +483,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "PocketLove/PocketLove-Prefix.pch";
 				INFOPLIST_FILE = "PocketLove/PocketLove-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;

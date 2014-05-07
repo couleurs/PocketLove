@@ -30,7 +30,6 @@
     }
 }
 
-
 - (IBAction)avatarUpdated:(UIStoryboardSegue *)segue
 {
 }

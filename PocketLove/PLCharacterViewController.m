@@ -7,11 +7,13 @@
 //
 
 #import "PLCharacterViewController.h"
+#import "PLConstants.h"
 
 @interface PLCharacterViewController ()
 
 @property (weak, nonatomic) IBOutlet UILabel *nameLabel;
 @property (weak, nonatomic) IBOutlet UILabel *timeLabel;
+@property (weak, nonatomic) IBOutlet UIImageView *avatarImageView;
 
 @end
 
@@ -34,19 +36,26 @@
     return [formatter stringFromDate:date];
 }
 
+- (void)viewWillAppear:(BOOL)animated
+{
+    [self updateUI];
+}
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    self.view.backgroundColor = [UIColor colorWithRed:0 green:213/255.0 blue:255/255.0 alpha:1.0];
-    [self updateUI];
 }
 
 - (void)updateUI
 {
+    //labels
     self.nameLabel.text = self.avatar.name;
     self.timeLabel.text = [self formattedStringFromDate:[self currentTime]];
     [self.nameLabel sizeToFit];
     [self.timeLabel sizeToFit];
+    
+    //image
+    self.avatarImageView.image = [self imageForMood:self.avatar.mood];
 }
 
 #pragma mark - Abstract methods
@@ -55,5 +64,15 @@
 {
     return nil;
 }
+
+#pragma mark - Privates
+
+- (UIImage *)imageForMood:(NSUInteger)mood
+{
+    NSArray *moodStrings =[PLConstants moodStrings];
+    NSString *imageName = [NSString stringWithFormat:@"Boy_Home_%@", moodStrings[mood]];
+    return [UIImage imageNamed:imageName];
+}
+    
 
 @end
