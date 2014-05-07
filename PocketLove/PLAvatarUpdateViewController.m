@@ -35,6 +35,8 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    self.view.backgroundColor = [PLConstants backgroundColor];
 }
 
 #pragma mark - UICollectionView protocols

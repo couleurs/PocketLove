@@ -133,7 +133,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </switch>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Available for Call" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RuZ-g3-Pcw">
-                                <rect key="frame" x="20" y="28" width="223" height="21"/>
+                                <rect key="frame" x="20" y="25" width="223" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -209,13 +209,12 @@
                             <constraint firstItem="nqF-HB-H41" firstAttribute="trailing" secondItem="g9P-M2-1lx" secondAttribute="trailing" id="5Yp-Y5-wCx"/>
                             <constraint firstItem="vmE-Wd-ovW" firstAttribute="leading" secondItem="0AZ-9b-yQN" secondAttribute="leading" constant="20" symbolic="YES" id="6E7-6l-E8o"/>
                             <constraint firstItem="nqF-HB-H41" firstAttribute="top" secondItem="UIn-vu-wg1" secondAttribute="bottom" constant="8" symbolic="YES" id="Jf0-oc-8U2"/>
+                            <constraint firstItem="RuZ-g3-Pcw" firstAttribute="centerY" secondItem="a8F-Qj-u0u" secondAttribute="centerY" id="NDd-Wd-KH8"/>
                             <constraint firstItem="nqF-HB-H41" firstAttribute="leading" secondItem="UIn-vu-wg1" secondAttribute="leading" id="Okd-gR-BjR"/>
-                            <constraint firstItem="RuZ-g3-Pcw" firstAttribute="top" secondItem="S2X-yK-A89" secondAttribute="bottom" constant="20" symbolic="YES" id="WNJ-LY-aDa"/>
                             <constraint firstAttribute="trailing" secondItem="vmE-Wd-ovW" secondAttribute="trailing" constant="20" symbolic="YES" id="bZi-JD-Sg9"/>
                             <constraint firstItem="g9P-M2-1lx" firstAttribute="leading" secondItem="UIn-vu-wg1" secondAttribute="trailing" constant="8" symbolic="YES" id="dhq-rc-dcK"/>
                             <constraint firstItem="g9P-M2-1lx" firstAttribute="centerY" secondItem="UIn-vu-wg1" secondAttribute="centerY" id="fe6-5l-FIX"/>
                             <constraint firstItem="nqF-HB-H41" firstAttribute="trailing" secondItem="a8F-Qj-u0u" secondAttribute="trailing" id="fhI-yX-9Bx"/>
-                            <constraint firstItem="RuZ-g3-Pcw" firstAttribute="centerY" secondItem="a8F-Qj-u0u" secondAttribute="centerY" constant="3" id="gkx-XJ-gmd"/>
                             <constraint firstItem="g9P-M2-1lx" firstAttribute="centerY" secondItem="UIn-vu-wg1" secondAttribute="centerY" id="haG-kQ-RQq"/>
                             <constraint firstItem="RuZ-g3-Pcw" firstAttribute="leading" secondItem="0AZ-9b-yQN" secondAttribute="leading" constant="20" symbolic="YES" id="hyM-CD-TMd"/>
                             <constraint firstItem="UIn-vu-wg1" firstAttribute="leading" secondItem="0AZ-9b-yQN" secondAttribute="leading" constant="20" symbolic="YES" id="p6Y-Uh-Puk"/>
@@ -225,6 +224,7 @@
                             <constraint firstItem="g9P-M2-1lx" firstAttribute="top" secondItem="a8F-Qj-u0u" secondAttribute="bottom" constant="8" symbolic="YES" id="xmf-Nk-3oZ"/>
                         </constraints>
                     </view>
+                    <nil key="simulatedStatusBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="voK-76-vC8" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="3hi-CD-DvF" userLabel="Exit" sceneMemberID="exit"/>

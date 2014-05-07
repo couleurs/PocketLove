@@ -44,6 +44,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    self.view.backgroundColor = [PLConstants backgroundColor];
 }
 
 - (void)updateUI
