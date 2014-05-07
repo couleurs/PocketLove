@@ -16,6 +16,7 @@
 @property (nonatomic, strong) NSMutableArray *avatarMoodImages;
 @property (nonatomic, strong) NSIndexPath *selectedIndexPath;
 @property (weak, nonatomic) IBOutlet UISwitch *callAvailabilitySwitch;
+@property (weak, nonatomic) IBOutlet UISwitch *atWorkSwitch;
 @property (weak, nonatomic) IBOutlet UICollectionView *moodCollectionView;
 
 @end
@@ -49,6 +50,7 @@
     
     //synchronize with avatar state
     self.callAvailabilitySwitch.on = self.avatar.isAvailableForCall;
+    self.atWorkSwitch.on = self.avatar.isAtWork;
 }
 
 - (void)viewDidAppear:(BOOL)animated
@@ -66,6 +68,7 @@
 {
     if ([segue.identifier isEqualToString:@"DismissAvatarUpdate"]) {
         self.avatar.callAvailability = self.callAvailabilitySwitch.isOn;
+        self.avatar.atWork = self.atWorkSwitch.isOn;
         self.avatar.mood = self.selectedIndexPath.row;
     }
 }

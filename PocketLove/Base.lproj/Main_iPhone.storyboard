@@ -51,6 +51,10 @@
                                     <constraint firstAttribute="height" constant="45" id="R23-zm-eiU"/>
                                 </constraints>
                             </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Weather_Cloudy" translatesAutoresizingMaskIntoConstraints="NO" id="0sO-qq-ggP">
+                                <rect key="frame" x="80" y="128" width="160" height="160"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
@@ -59,7 +63,9 @@
                             <constraint firstItem="KFm-4g-lHo" firstAttribute="centerX" secondItem="JvL-Sf-ZPX" secondAttribute="centerX" id="Lz7-aU-5HQ"/>
                             <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="JvL-Sf-ZPX" secondAttribute="bottom" constant="20" symbolic="YES" id="NQ6-hx-xvd"/>
                             <constraint firstItem="rBF-ap-Acd" firstAttribute="bottom" secondItem="KFm-4g-lHo" secondAttribute="bottom" id="bCR-Ne-rBz"/>
+                            <constraint firstAttribute="centerX" secondItem="0sO-qq-ggP" secondAttribute="centerX" id="bKV-85-pwh"/>
                             <constraint firstItem="JvL-Sf-ZPX" firstAttribute="top" secondItem="KFm-4g-lHo" secondAttribute="bottom" constant="8" symbolic="YES" id="kqD-6f-pQ3"/>
+                            <constraint firstItem="xy7-Qz-psL" firstAttribute="top" secondItem="0sO-qq-ggP" secondAttribute="bottom" constant="8" symbolic="YES" id="n3E-Mx-vY9"/>
                             <constraint firstAttribute="centerX" secondItem="xy7-Qz-psL" secondAttribute="centerX" id="nCn-sV-OAk"/>
                             <constraint firstItem="JvL-Sf-ZPX" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="zHz-KB-Dsv"/>
                         </constraints>
@@ -237,6 +243,7 @@
                     </view>
                     <nil key="simulatedStatusBarMetrics"/>
                     <connections>
+                        <outlet property="atWorkSwitch" destination="g9P-M2-1lx" id="Nvd-K0-z7N"/>
                         <outlet property="callAvailabilitySwitch" destination="a8F-Qj-u0u" id="Meo-N6-HVx"/>
                         <outlet property="moodCollectionView" destination="nqF-HB-H41" id="07s-iT-ePR"/>
                     </connections>
@@ -249,6 +256,7 @@
     </scenes>
     <resources>
         <image name="Boy_Home_Normal" width="100" height="180"/>
+        <image name="Weather_Cloudy" width="160" height="160"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>

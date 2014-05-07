@@ -73,7 +73,7 @@
 - (UIImage *)imageForMood:(NSUInteger)mood
 {
     NSArray *moodStrings =[PLConstants moodStrings];
-    NSString *imageName = [NSString stringWithFormat:@"Boy_Home_%@", moodStrings[mood]];
+    NSString *imageName = [NSString stringWithFormat:@"Boy_%@_%@", [self stringForWorkStatus:self.avatar.isAtWork], moodStrings[mood]];
     return [UIImage imageNamed:imageName];
 }
 
@@ -81,6 +81,11 @@
 {
     NSString *imageName = availability ? @"Icon_Green_Phone" : @"Icon_Red_Phone";
     return [UIImage imageNamed:imageName];
+}
+
+- (NSString *)stringForWorkStatus:(BOOL)atWork
+{
+    return atWork ? @"Work" : @"Home";
 }
 
 @end
