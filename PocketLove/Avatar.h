@@ -11,7 +11,6 @@
 @interface Avatar : NSObject
 
 @property (nonatomic) NSUInteger mood; //0-6
-@property (nonatomic, strong) NSString *name;
 @property (nonatomic, getter = isAvailableForCall) BOOL callAvailability;
 @property (nonatomic, getter = isAtWork) BOOL atWork;
 

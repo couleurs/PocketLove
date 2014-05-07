@@ -22,4 +22,9 @@
     return [now dateByAddingTimeInterval:3*60*60];
 }
 
+- (NSString *)avatarName
+{
+    return @"You";
+}
+
 @end

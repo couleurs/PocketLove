@@ -11,7 +11,6 @@
 
 @interface PLCharacterViewController ()
 
-@property (weak, nonatomic) IBOutlet UILabel *nameLabel;
 @property (weak, nonatomic) IBOutlet UILabel *timeLabel;
 @property (weak, nonatomic) IBOutlet UIImageView *avatarImageView;
 @property (weak, nonatomic) IBOutlet UIImageView *callAvailabilityImageView;
@@ -24,7 +23,6 @@
 {
     if (!_avatar) {
         _avatar = [[Avatar alloc] init];
-        _avatar.name = @"Kasey";
         _avatar.mood = 0;
     }
     return _avatar;
@@ -51,9 +49,7 @@
 - (void)updateUI
 {
     //labels
-    self.nameLabel.text = self.avatar.name;
     self.timeLabel.text = [self formattedStringFromDate:[self currentTime]];
-    [self.nameLabel sizeToFit];
     [self.timeLabel sizeToFit];
     
     //avatar

@@ -20,6 +20,11 @@
     return [NSDate date];
 }
 
+- (NSString *)avatarName
+{
+    return @"Me";
+}
+
 #pragma mark - Segues
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
