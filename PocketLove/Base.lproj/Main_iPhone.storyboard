@@ -43,12 +43,22 @@
                                 <rect key="frame" x="110" y="296" width="100" height="180"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="rBF-ap-Acd">
+                                <rect key="frame" x="209" y="477" width="27" height="45"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="27" id="GjD-rS-EET"/>
+                                    <constraint firstAttribute="height" constant="45" id="R23-zm-eiU"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="rBF-ap-Acd" firstAttribute="leading" secondItem="KFm-4g-lHo" secondAttribute="trailing" constant="8" symbolic="YES" id="3Qm-Gj-xmk"/>
                             <constraint firstItem="KFm-4g-lHo" firstAttribute="top" secondItem="xy7-Qz-psL" secondAttribute="bottom" constant="8" symbolic="YES" id="K7I-44-p3n"/>
                             <constraint firstItem="KFm-4g-lHo" firstAttribute="centerX" secondItem="JvL-Sf-ZPX" secondAttribute="centerX" id="Lz7-aU-5HQ"/>
                             <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="JvL-Sf-ZPX" secondAttribute="bottom" constant="20" symbolic="YES" id="NQ6-hx-xvd"/>
+                            <constraint firstItem="rBF-ap-Acd" firstAttribute="bottom" secondItem="KFm-4g-lHo" secondAttribute="bottom" id="bCR-Ne-rBz"/>
                             <constraint firstItem="JvL-Sf-ZPX" firstAttribute="top" secondItem="KFm-4g-lHo" secondAttribute="bottom" constant="8" symbolic="YES" id="kqD-6f-pQ3"/>
                             <constraint firstAttribute="centerX" secondItem="xy7-Qz-psL" secondAttribute="centerX" id="nCn-sV-OAk"/>
                             <constraint firstItem="JvL-Sf-ZPX" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="zHz-KB-Dsv"/>
@@ -57,6 +67,7 @@
                     <extendedEdge key="edgesForExtendedLayout"/>
                     <connections>
                         <outlet property="avatarImageView" destination="xy7-Qz-psL" id="QkD-mp-2as"/>
+                        <outlet property="callAvailabilityImageView" destination="rBF-ap-Acd" id="pBM-Lc-Cbz"/>
                         <outlet property="timeLabel" destination="KFm-4g-lHo" id="HXD-Z0-EA0"/>
                     </connections>
                 </viewController>
@@ -153,7 +164,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="3hi-CD-DvF" kind="unwind" unwindAction="avatarUpdated:" id="R9D-NT-vce"/>
+                                    <segue destination="3hi-CD-DvF" kind="unwind" identifier="DismissAvatarUpdate" unwindAction="avatarUpdated:" id="R9D-NT-vce"/>
                                 </connections>
                             </button>
                             <collectionView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" minimumZoomScale="0.0" maximumZoomScale="0.0" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="nqF-HB-H41">
@@ -204,7 +215,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="a8F-Qj-u0u" firstAttribute="top" secondItem="S2X-yK-A89" secondAttribute="bottom" id="3zp-Fs-a59"/>
+                            <constraint firstItem="a8F-Qj-u0u" firstAttribute="top" secondItem="S2X-yK-A89" secondAttribute="bottom" constant="20" id="3zp-Fs-a59"/>
                             <constraint firstItem="a8F-Qj-u0u" firstAttribute="leading" secondItem="RuZ-g3-Pcw" secondAttribute="trailing" constant="8" symbolic="YES" id="5IG-Eb-qWw"/>
                             <constraint firstItem="nqF-HB-H41" firstAttribute="trailing" secondItem="g9P-M2-1lx" secondAttribute="trailing" id="5Yp-Y5-wCx"/>
                             <constraint firstItem="vmE-Wd-ovW" firstAttribute="leading" secondItem="0AZ-9b-yQN" secondAttribute="leading" constant="20" symbolic="YES" id="6E7-6l-E8o"/>
@@ -225,6 +236,10 @@
                         </constraints>
                     </view>
                     <nil key="simulatedStatusBarMetrics"/>
+                    <connections>
+                        <outlet property="callAvailabilitySwitch" destination="a8F-Qj-u0u" id="Meo-N6-HVx"/>
+                        <outlet property="moodCollectionView" destination="nqF-HB-H41" id="07s-iT-ePR"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="voK-76-vC8" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="3hi-CD-DvF" userLabel="Exit" sceneMemberID="exit"/>

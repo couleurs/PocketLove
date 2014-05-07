@@ -15,10 +15,19 @@
 
 @property (nonatomic, strong) NSMutableArray *avatarMoodImages;
 @property (nonatomic, strong) NSIndexPath *selectedIndexPath;
+@property (weak, nonatomic) IBOutlet UISwitch *callAvailabilitySwitch;
+@property (weak, nonatomic) IBOutlet UICollectionView *moodCollectionView;
 
 @end
 
 @implementation PLAvatarUpdateViewController
+
+- (void)setMoodCollectionView:(UICollectionView *)moodCollectionView
+{
+    _moodCollectionView = moodCollectionView;
+    moodCollectionView.allowsSelection = YES;
+    moodCollectionView.allowsMultipleSelection = NO;
+}
 
 - (NSMutableArray *)avatarMoodImages
 {
@@ -37,6 +46,28 @@
     // Do any additional setup after loading the view.
     
     self.view.backgroundColor = [PLConstants backgroundColor];
+    
+    //synchronize with avatar state
+    self.callAvailabilitySwitch.on = self.avatar.isAvailableForCall;
+}
+
+- (void)viewDidAppear:(BOOL)animated
+{
+    NSIndexPath *indexPath = [NSIndexPath indexPathForRow:self.avatar.mood inSection:0];
+    [self highlightCellAtIndexPath:indexPath];
+    [self.moodCollectionView selectItemAtIndexPath:indexPath
+                                          animated:YES
+                                    scrollPosition:UICollectionViewScrollPositionLeft];
+}
+
+#pragma mark - Segues
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    if ([segue.identifier isEqualToString:@"DismissAvatarUpdate"]) {
+        self.avatar.callAvailability = self.callAvailabilitySwitch.isOn;
+        self.avatar.mood = self.selectedIndexPath.row;
+    }
 }
 
 #pragma mark - UICollectionView protocols
@@ -61,16 +92,7 @@
 
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
 {
-    UICollectionViewCell *cell = [collectionView cellForItemAtIndexPath:indexPath];
-    cell.layer.borderColor = [UIColor whiteColor].CGColor;
-    cell.layer.borderWidth = 3.0f;
-    
-    if (self.selectedIndexPath) {
-        [collectionView deselectItemAtIndexPath:self.selectedIndexPath animated:YES];
-    }
-    
-    self.avatar.mood = indexPath.row;
-    self.selectedIndexPath = indexPath;
+    [self highlightCellAtIndexPath:indexPath];
 }
 
 - (void)collectionView:(UICollectionView *)collectionView didDeselectItemAtIndexPath:(NSIndexPath *)indexPath
@@ -78,6 +100,20 @@
     UICollectionViewCell *cell = [collectionView cellForItemAtIndexPath:indexPath];
     cell.layer.borderColor = [UIColor clearColor].CGColor;
     cell.layer.borderWidth = 0.0f;
+}
+
+#pragma mark - Privates
+
+- (void)highlightCellAtIndexPath:(NSIndexPath *)indexPath
+{
+    UICollectionViewCell *cell = [self.moodCollectionView cellForItemAtIndexPath:indexPath];
+    [self addBorderToView:cell];
+    
+    if (self.selectedIndexPath) {
+        [self.moodCollectionView deselectItemAtIndexPath:self.selectedIndexPath animated:YES];
+    }
+    
+    self.selectedIndexPath = indexPath;
 }
 
 - (void)addBorderToView:(UIView *)view

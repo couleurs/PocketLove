@@ -14,6 +14,7 @@
 @property (weak, nonatomic) IBOutlet UILabel *nameLabel;
 @property (weak, nonatomic) IBOutlet UILabel *timeLabel;
 @property (weak, nonatomic) IBOutlet UIImageView *avatarImageView;
+@property (weak, nonatomic) IBOutlet UIImageView *callAvailabilityImageView;
 
 @end
 
@@ -55,8 +56,9 @@
     [self.nameLabel sizeToFit];
     [self.timeLabel sizeToFit];
     
-    //image
+    //avatar
     self.avatarImageView.image = [self imageForMood:self.avatar.mood];
+    self.callAvailabilityImageView.image = [self imageForCallAvailability:self.avatar.isAvailableForCall];
 }
 
 #pragma mark - Abstract methods
@@ -74,6 +76,11 @@
     NSString *imageName = [NSString stringWithFormat:@"Boy_Home_%@", moodStrings[mood]];
     return [UIImage imageNamed:imageName];
 }
-    
+
+- (UIImage *)imageForCallAvailability:(BOOL)availability
+{
+    NSString *imageName = availability ? @"Icon_Green_Phone" : @"Icon_Red_Phone";
+    return [UIImage imageNamed:imageName];
+}
 
 @end
