@@ -53,6 +53,21 @@
 		D1BB37CE191B4AB9009A0423 /* pipe_top@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D1BB37BF191B4AB9009A0423 /* pipe_top@2x.png */; };
 		D1BB37CF191B4AB9009A0423 /* pipe_bottom@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D1BB37C0191B4AB9009A0423 /* pipe_bottom@2x.png */; };
 		D1BB37D4191B52CE009A0423 /* PLGameMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D1BB37D3191B52CE009A0423 /* PLGameMenuViewController.m */; };
+		D1BB37D7191B5BB6009A0423 /* M2Theme.m in Sources */ = {isa = PBXBuildFile; fileRef = D1BB37D6191B5BB6009A0423 /* M2Theme.m */; };
+		D1BB37DE191B5CAF009A0423 /* M2ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D1BB37D9191B5CAF009A0423 /* M2ViewController.m */; };
+		D1BB37DF191B5CAF009A0423 /* M2SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D1BB37DB191B5CAF009A0423 /* M2SettingsViewController.m */; };
+		D1BB37E0191B5CAF009A0423 /* M2SettingsDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D1BB37DD191B5CAF009A0423 /* M2SettingsDetailViewController.m */; };
+		D1BB37E5191B5CCD009A0423 /* M2GlobalState.m in Sources */ = {isa = PBXBuildFile; fileRef = D1BB37E3191B5CCD009A0423 /* M2GlobalState.m */; };
+		D1BB37EE191B5CDD009A0423 /* M2Cell.m in Sources */ = {isa = PBXBuildFile; fileRef = D1BB37E7191B5CDD009A0423 /* M2Cell.m */; };
+		D1BB37EF191B5CDD009A0423 /* M2Grid.m in Sources */ = {isa = PBXBuildFile; fileRef = D1BB37E9191B5CDD009A0423 /* M2Grid.m */; };
+		D1BB37F0191B5CDD009A0423 /* M2Scene.m in Sources */ = {isa = PBXBuildFile; fileRef = D1BB37EB191B5CDD009A0423 /* M2Scene.m */; };
+		D1BB37F1191B5CDD009A0423 /* M2Tile.m in Sources */ = {isa = PBXBuildFile; fileRef = D1BB37ED191B5CDD009A0423 /* M2Tile.m */; };
+		D1BB37F5191B5D03009A0423 /* M2GameManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D1BB37F4191B5D03009A0423 /* M2GameManager.m */; };
+		D1BB37FD191B5D1C009A0423 /* M2GridView.m in Sources */ = {isa = PBXBuildFile; fileRef = D1BB37F8191B5D1C009A0423 /* M2GridView.m */; };
+		D1BB37FE191B5D1C009A0423 /* M2ScoreView.m in Sources */ = {isa = PBXBuildFile; fileRef = D1BB37FA191B5D1C009A0423 /* M2ScoreView.m */; };
+		D1BB37FF191B5D1C009A0423 /* M2Overlay.m in Sources */ = {isa = PBXBuildFile; fileRef = D1BB37FC191B5D1C009A0423 /* M2Overlay.m */; };
+		D1BB3803191B5DA6009A0423 /* Boy_Face_2.png in Resources */ = {isa = PBXBuildFile; fileRef = D1BB3802191B5DA6009A0423 /* Boy_Face_2.png */; };
+		D1BB3805191B5DAC009A0423 /* Boy_Face_1.png in Resources */ = {isa = PBXBuildFile; fileRef = D1BB3804191B5DAC009A0423 /* Boy_Face_1.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -133,6 +148,35 @@
 		D1BB37C0191B4AB9009A0423 /* pipe_bottom@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pipe_bottom@2x.png"; sourceTree = "<group>"; };
 		D1BB37D2191B52CE009A0423 /* PLGameMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PLGameMenuViewController.h; sourceTree = "<group>"; };
 		D1BB37D3191B52CE009A0423 /* PLGameMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PLGameMenuViewController.m; sourceTree = "<group>"; };
+		D1BB37D5191B5BB6009A0423 /* M2Theme.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = M2Theme.h; sourceTree = "<group>"; };
+		D1BB37D6191B5BB6009A0423 /* M2Theme.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = M2Theme.m; sourceTree = "<group>"; };
+		D1BB37D8191B5CAF009A0423 /* M2ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = M2ViewController.h; sourceTree = "<group>"; };
+		D1BB37D9191B5CAF009A0423 /* M2ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = M2ViewController.m; sourceTree = "<group>"; };
+		D1BB37DA191B5CAF009A0423 /* M2SettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = M2SettingsViewController.h; sourceTree = "<group>"; };
+		D1BB37DB191B5CAF009A0423 /* M2SettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = M2SettingsViewController.m; sourceTree = "<group>"; };
+		D1BB37DC191B5CAF009A0423 /* M2SettingsDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = M2SettingsDetailViewController.h; sourceTree = "<group>"; };
+		D1BB37DD191B5CAF009A0423 /* M2SettingsDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = M2SettingsDetailViewController.m; sourceTree = "<group>"; };
+		D1BB37E2191B5CCD009A0423 /* M2GlobalState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = M2GlobalState.h; sourceTree = "<group>"; };
+		D1BB37E3191B5CCD009A0423 /* M2GlobalState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = M2GlobalState.m; sourceTree = "<group>"; };
+		D1BB37E4191B5CCD009A0423 /* M2Position.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = M2Position.h; sourceTree = "<group>"; };
+		D1BB37E6191B5CDD009A0423 /* M2Cell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = M2Cell.h; sourceTree = "<group>"; };
+		D1BB37E7191B5CDD009A0423 /* M2Cell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = M2Cell.m; sourceTree = "<group>"; };
+		D1BB37E8191B5CDD009A0423 /* M2Grid.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = M2Grid.h; sourceTree = "<group>"; };
+		D1BB37E9191B5CDD009A0423 /* M2Grid.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = M2Grid.m; sourceTree = "<group>"; };
+		D1BB37EA191B5CDD009A0423 /* M2Scene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = M2Scene.h; sourceTree = "<group>"; };
+		D1BB37EB191B5CDD009A0423 /* M2Scene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = M2Scene.m; sourceTree = "<group>"; };
+		D1BB37EC191B5CDD009A0423 /* M2Tile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = M2Tile.h; sourceTree = "<group>"; };
+		D1BB37ED191B5CDD009A0423 /* M2Tile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = M2Tile.m; sourceTree = "<group>"; };
+		D1BB37F3191B5D03009A0423 /* M2GameManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = M2GameManager.h; sourceTree = "<group>"; };
+		D1BB37F4191B5D03009A0423 /* M2GameManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = M2GameManager.m; sourceTree = "<group>"; };
+		D1BB37F7191B5D1C009A0423 /* M2GridView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = M2GridView.h; sourceTree = "<group>"; };
+		D1BB37F8191B5D1C009A0423 /* M2GridView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = M2GridView.m; sourceTree = "<group>"; };
+		D1BB37F9191B5D1C009A0423 /* M2ScoreView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = M2ScoreView.h; sourceTree = "<group>"; };
+		D1BB37FA191B5D1C009A0423 /* M2ScoreView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = M2ScoreView.m; sourceTree = "<group>"; };
+		D1BB37FB191B5D1C009A0423 /* M2Overlay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = M2Overlay.h; sourceTree = "<group>"; };
+		D1BB37FC191B5D1C009A0423 /* M2Overlay.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = M2Overlay.m; sourceTree = "<group>"; };
+		D1BB3802191B5DA6009A0423 /* Boy_Face_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Boy_Face_2.png; sourceTree = "<group>"; };
+		D1BB3804191B5DAC009A0423 /* Boy_Face_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Boy_Face_1.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -196,17 +240,14 @@
 		5C1B906F1916FB6700293400 /* PocketLove */ = {
 			isa = PBXGroup;
 			children = (
-				D1BB379A191B48A5009A0423 /* Constants.h */,
-				D1BB3799191B488B009A0423 /* Macros.h */,
-				5C846A03191ADF64001A25A0 /* PLConstants.h */,
-				5C846A04191ADF64001A25A0 /* PLConstants.m */,
+				5CA188961919F165001130BB /* Main_iPhone.storyboard */,
+				D1BB3806191B5E68009A0423 /* Constants */,
 				5CA188991919F25C001130BB /* Views */,
 				5CA188901919E426001130BB /* Model */,
 				5CA1888F1919E420001130BB /* Controllers */,
-				D1BB37A1191B494D009A0423 /* Scenes */,
-				D1BB37B0191B4A83009A0423 /* Helpers */,
+				D1BB37A1191B494D009A0423 /* FlappyMisc */,
+				D1BB37F2191B5CE5009A0423 /* 2048Misc */,
 				5C428C411917114F008D12A8 /* Resources */,
-				5CA188961919F165001130BB /* Main_iPhone.storyboard */,
 				5C1B90841916FB6700293400 /* Images.xcassets */,
 				5C1B90701916FB6700293400 /* Supporting Files */,
 			);
@@ -247,7 +288,7 @@
 		5C428C411917114F008D12A8 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				D1BB37B1191B4AA5009A0423 /* Images */,
+				D1BB37B1191B4AA5009A0423 /* FlappyImages */,
 				5C428C4219171163008D12A8 /* pixelated.ttf */,
 			);
 			name = Resources;
@@ -256,10 +297,10 @@
 		5CA1888F1919E420001130BB /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				D1BB37E1191B5CB5009A0423 /* 2048Controllers */,
 				D1BB37D2191B52CE009A0423 /* PLGameMenuViewController.h */,
 				D1BB37D3191B52CE009A0423 /* PLGameMenuViewController.m */,
-				D1BB379E191B492B009A0423 /* ViewController.h */,
-				D1BB379F191B492B009A0423 /* ViewController.m */,
+				D1BB3801191B5D54009A0423 /* FlappyControllers */,
 				D1BB37A2191B4966009A0423 /* CharacterControllers */,
 			);
 			name = Controllers;
@@ -279,20 +320,23 @@
 		5CA188991919F25C001130BB /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				D1BB3800191B5D25009A0423 /* 2048Views */,
 				5CA1889A1919F29E001130BB /* ImageCollectionViewCell.h */,
 				5CA1889B1919F29E001130BB /* ImageCollectionViewCell.m */,
 			);
 			name = Views;
 			sourceTree = "<group>";
 		};
-		D1BB37A1191B494D009A0423 /* Scenes */ = {
+		D1BB37A1191B494D009A0423 /* FlappyMisc */ = {
 			isa = PBXGroup;
 			children = (
+				D1BB3799191B488B009A0423 /* Macros.h */,
+				D1BB37B0191B4A83009A0423 /* FlappyHelpers */,
 				D1BB37A6191B4A06009A0423 /* Nodes */,
 				D1BB37A3191B49EE009A0423 /* Scene.h */,
 				D1BB37A4191B49EE009A0423 /* Scene.m */,
 			);
-			name = Scenes;
+			name = FlappyMisc;
 			sourceTree = "<group>";
 		};
 		D1BB37A2191B4966009A0423 /* CharacterControllers */ = {
@@ -323,18 +367,20 @@
 			name = Nodes;
 			sourceTree = "<group>";
 		};
-		D1BB37B0191B4A83009A0423 /* Helpers */ = {
+		D1BB37B0191B4A83009A0423 /* FlappyHelpers */ = {
 			isa = PBXGroup;
 			children = (
 				D1BB37AD191B4A7D009A0423 /* Math.h */,
 				D1BB37AE191B4A7D009A0423 /* Math.m */,
 			);
-			name = Helpers;
+			name = FlappyHelpers;
 			sourceTree = "<group>";
 		};
-		D1BB37B1191B4AA5009A0423 /* Images */ = {
+		D1BB37B1191B4AA5009A0423 /* FlappyImages */ = {
 			isa = PBXGroup;
 			children = (
+				D1BB3804191B5DAC009A0423 /* Boy_Face_1.png */,
+				D1BB3802191B5DA6009A0423 /* Boy_Face_2.png */,
 				D1BB37B2191B4AB9009A0423 /* medal_silver@2x.png */,
 				D1BB37B3191B4AB9009A0423 /* medal_gold@2x.png */,
 				D1BB37B4191B4AB9009A0423 /* medal_bronze@2x.png */,
@@ -351,7 +397,82 @@
 				D1BB37BF191B4AB9009A0423 /* pipe_top@2x.png */,
 				D1BB37C0191B4AB9009A0423 /* pipe_bottom@2x.png */,
 			);
-			name = Images;
+			name = FlappyImages;
+			sourceTree = "<group>";
+		};
+		D1BB37E1191B5CB5009A0423 /* 2048Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				D1BB37D8191B5CAF009A0423 /* M2ViewController.h */,
+				D1BB37D9191B5CAF009A0423 /* M2ViewController.m */,
+				D1BB37DA191B5CAF009A0423 /* M2SettingsViewController.h */,
+				D1BB37DB191B5CAF009A0423 /* M2SettingsViewController.m */,
+				D1BB37DC191B5CAF009A0423 /* M2SettingsDetailViewController.h */,
+				D1BB37DD191B5CAF009A0423 /* M2SettingsDetailViewController.m */,
+			);
+			name = 2048Controllers;
+			sourceTree = "<group>";
+		};
+		D1BB37F2191B5CE5009A0423 /* 2048Misc */ = {
+			isa = PBXGroup;
+			children = (
+				D1BB37F6191B5D08009A0423 /* 2048State */,
+				D1BB37E6191B5CDD009A0423 /* M2Cell.h */,
+				D1BB37E7191B5CDD009A0423 /* M2Cell.m */,
+				D1BB37E8191B5CDD009A0423 /* M2Grid.h */,
+				D1BB37E9191B5CDD009A0423 /* M2Grid.m */,
+				D1BB37EA191B5CDD009A0423 /* M2Scene.h */,
+				D1BB37EB191B5CDD009A0423 /* M2Scene.m */,
+				D1BB37EC191B5CDD009A0423 /* M2Tile.h */,
+				D1BB37ED191B5CDD009A0423 /* M2Tile.m */,
+			);
+			name = 2048Misc;
+			sourceTree = "<group>";
+		};
+		D1BB37F6191B5D08009A0423 /* 2048State */ = {
+			isa = PBXGroup;
+			children = (
+				D1BB37E2191B5CCD009A0423 /* M2GlobalState.h */,
+				D1BB37E3191B5CCD009A0423 /* M2GlobalState.m */,
+				D1BB37E4191B5CCD009A0423 /* M2Position.h */,
+				D1BB37D5191B5BB6009A0423 /* M2Theme.h */,
+				D1BB37D6191B5BB6009A0423 /* M2Theme.m */,
+				D1BB37F3191B5D03009A0423 /* M2GameManager.h */,
+				D1BB37F4191B5D03009A0423 /* M2GameManager.m */,
+			);
+			name = 2048State;
+			sourceTree = "<group>";
+		};
+		D1BB3800191B5D25009A0423 /* 2048Views */ = {
+			isa = PBXGroup;
+			children = (
+				D1BB37F7191B5D1C009A0423 /* M2GridView.h */,
+				D1BB37F8191B5D1C009A0423 /* M2GridView.m */,
+				D1BB37F9191B5D1C009A0423 /* M2ScoreView.h */,
+				D1BB37FA191B5D1C009A0423 /* M2ScoreView.m */,
+				D1BB37FB191B5D1C009A0423 /* M2Overlay.h */,
+				D1BB37FC191B5D1C009A0423 /* M2Overlay.m */,
+			);
+			name = 2048Views;
+			sourceTree = "<group>";
+		};
+		D1BB3801191B5D54009A0423 /* FlappyControllers */ = {
+			isa = PBXGroup;
+			children = (
+				D1BB379E191B492B009A0423 /* ViewController.h */,
+				D1BB379F191B492B009A0423 /* ViewController.m */,
+			);
+			name = FlappyControllers;
+			sourceTree = "<group>";
+		};
+		D1BB3806191B5E68009A0423 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				5C846A04191ADF64001A25A0 /* PLConstants.m */,
+				5C846A03191ADF64001A25A0 /* PLConstants.h */,
+				D1BB379A191B48A5009A0423 /* Constants.h */,
+			);
+			name = Constants;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -437,6 +558,7 @@
 				D1BB37CD191B4AB9009A0423 /* floor@2x.png in Resources */,
 				D1BB37C4191B4AB9009A0423 /* back@2x.png in Resources */,
 				D1BB37C9191B4AB9009A0423 /* get_ready@2x.png in Resources */,
+				D1BB3805191B5DAC009A0423 /* Boy_Face_1.png in Resources */,
 				5CA188981919F165001130BB /* Main_iPhone.storyboard in Resources */,
 				5C428C4319171163008D12A8 /* pixelated.ttf in Resources */,
 				D1BB37CB191B4AB9009A0423 /* bird_2@2x.png in Resources */,
@@ -445,6 +567,7 @@
 				5C1B90741916FB6700293400 /* InfoPlist.strings in Resources */,
 				D1BB37C6191B4AB9009A0423 /* game_over@2x.png in Resources */,
 				D1BB37C2191B4AB9009A0423 /* medal_gold@2x.png in Resources */,
+				D1BB3803191B5DA6009A0423 /* Boy_Face_2.png in Resources */,
 				D1BB37C7191B4AB9009A0423 /* medal_platinum@2x.png in Resources */,
 				D1BB37CF191B4AB9009A0423 /* pipe_bottom@2x.png in Resources */,
 				D1BB37CC191B4AB9009A0423 /* bird_3@2x.png in Resources */,
@@ -468,7 +591,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D1BB37F5191B5D03009A0423 /* M2GameManager.m in Sources */,
 				5C428C4619171736008D12A8 /* PLAvatarUpdateViewController.m in Sources */,
+				D1BB37DE191B5CAF009A0423 /* M2ViewController.m in Sources */,
 				5C1B907A1916FB6700293400 /* PLAppDelegate.m in Sources */,
 				5CA188931919E444001130BB /* Avatar.m in Sources */,
 				5C1B90F5191702CE00293400 /* PLOtherCharacterViewController.m in Sources */,
@@ -479,12 +604,23 @@
 				D1BB37AB191B4A18009A0423 /* SKScrollingNode.m in Sources */,
 				D1BB37A0191B492B009A0423 /* ViewController.m in Sources */,
 				D1BB37D4191B52CE009A0423 /* PLGameMenuViewController.m in Sources */,
+				D1BB37FF191B5D1C009A0423 /* M2Overlay.m in Sources */,
+				D1BB37DF191B5CAF009A0423 /* M2SettingsViewController.m in Sources */,
 				5C846A05191ADF64001A25A0 /* PLConstants.m in Sources */,
+				D1BB37F1191B5CDD009A0423 /* M2Tile.m in Sources */,
 				D1BB37AF191B4A7D009A0423 /* Math.m in Sources */,
 				5C1B90F8191707B100293400 /* PLRootViewController.m in Sources */,
+				D1BB37EF191B5CDD009A0423 /* M2Grid.m in Sources */,
+				D1BB37D7191B5BB6009A0423 /* M2Theme.m in Sources */,
+				D1BB37E0191B5CAF009A0423 /* M2SettingsDetailViewController.m in Sources */,
 				5C1B90F2191702AE00293400 /* PLMyCharacterViewController.m in Sources */,
+				D1BB37E5191B5CCD009A0423 /* M2GlobalState.m in Sources */,
+				D1BB37EE191B5CDD009A0423 /* M2Cell.m in Sources */,
 				5C1B90EF1917028300293400 /* PLCharacterViewController.m in Sources */,
+				D1BB37F0191B5CDD009A0423 /* M2Scene.m in Sources */,
 				5C1B90761916FB6700293400 /* main.m in Sources */,
+				D1BB37FD191B5D1C009A0423 /* M2GridView.m in Sources */,
+				D1BB37FE191B5D1C009A0423 /* M2ScoreView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

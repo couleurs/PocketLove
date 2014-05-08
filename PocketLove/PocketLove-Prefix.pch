@@ -16,4 +16,6 @@
     #import <SpriteKit/SpriteKit.h>
     #import "Constants.h"
     #import "Math.h"
+    #import "M2GlobalState.h"
+
 #endif
