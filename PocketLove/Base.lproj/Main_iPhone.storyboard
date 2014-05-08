@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="13C1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="xQc-YX-1ep">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="13C1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="I8o-MA-oXT">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
     </dependencies>
@@ -83,7 +83,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="597" y="64"/>
+            <point key="canvasLocation" x="199" y="-832"/>
         </scene>
         <!--Root View Controller-->
         <scene sceneID="ITw-EF-NCo">
@@ -121,6 +121,16 @@
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="adH-OG-hgx">
+                                <rect key="frame" x="133" y="317" width="55" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="Icon_Game">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="2Ot-gs-Z0G" kind="modal" id="fuB-0W-Bg6"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -255,7 +265,60 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="voK-76-vC8" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="3hi-CD-DvF" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="1007" y="64"/>
+            <point key="canvasLocation" x="609" y="-832"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="BFZ-9c-Ubr">
+            <objects>
+                <navigationController definesPresentationContext="YES" id="2Ot-gs-Z0G" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="6mD-fw-CtJ">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="dtQ-HY-2SU" kind="relationship" relationship="rootViewController" id="ycB-Vf-ZeZ"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DDc-44-vlx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="653" y="91"/>
+        </scene>
+        <!--Game Menu View Controller - Game Menu-->
+        <scene sceneID="Yz3-ni-r31">
+            <objects>
+                <viewController id="dtQ-HY-2SU" customClass="PLGameMenuViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="YNy-3A-q1d"/>
+                        <viewControllerLayoutGuide type="bottom" id="Vpz-0y-rTZ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="qpp-nD-b9m">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6kz-nk-5K5">
+                                <rect key="frame" x="118" y="191" width="84" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Flappy Love">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="xQc-YX-1ep" kind="push" id="CNq-ko-eGL"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Game Menu" id="VIW-2s-BBw">
+                        <barButtonItem key="leftBarButtonItem" title="&lt;" id="WtL-YY-HTk">
+                            <connections>
+                                <segue destination="Mk4-a4-xzP" kind="unwind" unwindAction="goToOtherCharacterView:" id="qR7-20-hV1"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uJ9-4A-dRV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="Mk4-a4-xzP" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="1093" y="91"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="1OZ-Q7-qgV">
@@ -327,6 +390,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" id="3uw-PD-hFB"/>
                     <nil key="simulatedStatusBarMetrics"/>
                     <connections>
                         <outlet property="bestScoreLabel" destination="csQ-FF-KyE" id="4Ff-xI-Foa"/>
@@ -340,10 +404,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FNC-1V-SoA" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1625" y="-311"/>
         </scene>
     </scenes>
     <resources>
         <image name="Boy_Home_Normal" width="100" height="180"/>
+        <image name="Icon_Game" width="55" height="30"/>
         <image name="Weather_Cloudy" width="160" height="160"/>
         <image name="game_over.png" width="198" height="38"/>
         <image name="get_ready.png" width="130" height="40"/>

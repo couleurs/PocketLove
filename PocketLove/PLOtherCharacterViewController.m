@@ -27,4 +27,8 @@
     return @"You";
 }
 
+- (IBAction)goToOtherCharacterView :(UIStoryboardSegue*)segue {
+    
+}
+
 @end
