@@ -22,9 +22,9 @@
     return [now dateByAddingTimeInterval:3*60*60];
 }
 
-- (NSString *)avatarName
+- (NSUInteger)avatarGender
 {
-    return @"You";
+    return 1;
 }
 
 - (IBAction)goToOtherCharacterView :(UIStoryboardSegue*)segue {

@@ -57,6 +57,22 @@
     self.callAvailabilityImageView.image = [self imageForCallAvailability:self.avatar.isAvailableForCall];
 }
 
+#pragma mark - Actions
+
+- (IBAction)hugTapped:(UIButton *)sender {
+    self.avatarImageView.image = [UIImage imageNamed:@"Action_Hug"];
+    [NSTimer scheduledTimerWithTimeInterval:2.0
+                                     target:self
+                                   selector:@selector(hugOver:)
+                                   userInfo:nil
+                                    repeats:NO];
+}
+
+- (void)hugOver:(NSTimer *)timer
+{
+    self.avatarImageView.image = [self imageForMood:self.avatar.mood];
+}
+
 #pragma mark - Abstract methods
 
 - (NSDate *)currentTime
@@ -64,12 +80,17 @@
     return nil;
 }
 
+- (NSUInteger)avatarGender
+{
+    return 0;
+}
+
 #pragma mark - Privates
 
 - (UIImage *)imageForMood:(NSUInteger)mood
 {
     NSArray *moodStrings =[PLConstants moodStrings];
-    NSString *imageName = [NSString stringWithFormat:@"Boy_%@_%@", [self stringForWorkStatus:self.avatar.isAtWork], moodStrings[mood]];
+    NSString *imageName = [NSString stringWithFormat:@"%@_%@_%@", [self stringForGender:[self avatarGender]], [self stringForWorkStatus:self.avatar.isAtWork], moodStrings[mood]];
     return [UIImage imageNamed:imageName];
 }
 
@@ -82,6 +103,11 @@
 - (NSString *)stringForWorkStatus:(BOOL)atWork
 {
     return atWork ? @"Work" : @"Home";
+}
+
+- (NSString *)stringForGender:(NSUInteger)gender
+{
+    return (gender == 0) ? @"Boy" : @"Girl";
 }
 
 @end

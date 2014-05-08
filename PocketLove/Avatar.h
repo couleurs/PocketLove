@@ -11,6 +11,7 @@
 @interface Avatar : NSObject
 
 @property (nonatomic) NSUInteger mood; //0-6
+@property (nonatomic) NSUInteger gender; //0 for boy, 1 for girl
 @property (nonatomic, getter = isAvailableForCall) BOOL callAvailability;
 @property (nonatomic, getter = isAtWork) BOOL atWork;
 

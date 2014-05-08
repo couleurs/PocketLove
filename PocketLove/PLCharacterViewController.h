@@ -15,5 +15,6 @@
 
 //abstract methods
 - (NSDate *)currentTime;
+- (NSUInteger)avatarGender;
 
 @end

@@ -343,6 +343,7 @@
 		D1BB37A2191B4966009A0423 /* CharacterControllers */ = {
 			isa = PBXGroup;
 			children = (
+				5C1B90ED1917028300293400 /* PLCharacterViewController.h */,
 				5C1B90EE1917028300293400 /* PLCharacterViewController.m */,
 				5C1B90F0191702AE00293400 /* PLMyCharacterViewController.h */,
 				5C1B90F1191702AE00293400 /* PLMyCharacterViewController.m */,
@@ -352,7 +353,6 @@
 				5C1B90F7191707B100293400 /* PLRootViewController.m */,
 				5C428C4419171736008D12A8 /* PLAvatarUpdateViewController.h */,
 				5C428C4519171736008D12A8 /* PLAvatarUpdateViewController.m */,
-				5C1B90ED1917028300293400 /* PLCharacterViewController.h */,
 			);
 			name = CharacterControllers;
 			sourceTree = "<group>";

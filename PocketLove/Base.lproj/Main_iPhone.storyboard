@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="13C1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="I8o-MA-oXT">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5053" systemVersion="12F45" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="I8o-MA-oXT">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
     </dependencies>
@@ -83,7 +83,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="199" y="-832"/>
+            <point key="canvasLocation" x="145" y="-794"/>
         </scene>
         <!--Root View Controller-->
         <scene sceneID="ITw-EF-NCo">
@@ -102,46 +102,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bt7-1h-tol" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-192" y="64"/>
-        </scene>
-        <!--Other Character View Controller-->
-        <scene sceneID="GOZ-6u-Omf">
-            <objects>
-                <viewController storyboardIdentifier="PLOtherCharacterViewController" id="i4e-4O-ISq" customClass="PLOtherCharacterViewController" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="wtF-0a-F13"/>
-                        <viewControllerLayoutGuide type="bottom" id="q6X-ZK-zBA"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="3Te-dW-q6z">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="02:00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mhE-ZC-kuO">
-                                <rect key="frame" x="20" y="454" width="280" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="adH-OG-hgx">
-                                <rect key="frame" x="133" y="317" width="55" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="Icon_Game">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <segue destination="2Ot-gs-Z0G" kind="modal" id="fuB-0W-Bg6"/>
-                                </connections>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                    </view>
-                    <extendedEdge key="edgesForExtendedLayout"/>
-                    <connections>
-                        <outlet property="timeLabel" destination="mhE-ZC-kuO" id="BiG-do-dnN"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Vau-Ox-GHx" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="209" y="64"/>
         </scene>
         <!--Avatar Update View Controller-->
         <scene sceneID="6vP-7a-lE3">
@@ -223,7 +183,7 @@
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
-                                <collectionReusableView key="sectionHeaderView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="ws1-Ou-HkR">
+                                <collectionReusableView key="sectionHeaderView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="AvatarCellHeader" id="ws1-Ou-HkR">
                                     <rect key="frame" x="0.0" y="0.0" width="280" height="20"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </collectionReusableView>
@@ -714,12 +674,113 @@
             </objects>
             <point key="canvasLocation" x="2032" y="503"/>
         </scene>
+        <!--Other Character View Controller-->
+        <scene sceneID="BWs-j2-oEp">
+            <objects>
+                <viewController storyboardIdentifier="PLOtherCharacterViewController" id="fLF-NW-nWK" customClass="PLOtherCharacterViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="obC-ET-Pze"/>
+                        <viewControllerLayoutGuide type="bottom" id="fFA-9Y-sy6"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="eMC-oK-7UG">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="02:00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N8u-hn-Ow5">
+                                <rect key="frame" x="120" y="484" width="81" height="38"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="32"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Kasey (NY)" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aKF-ka-Zsb">
+                                <rect key="frame" x="81" y="20" width="158" height="38"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="32"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Boy_Home_Normal" translatesAutoresizingMaskIntoConstraints="NO" id="cct-DP-VzM">
+                                <rect key="frame" x="110" y="296" width="100" height="180"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="wzQ-YN-gBu">
+                                <rect key="frame" x="209" y="477" width="27" height="45"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="Ceu-VQ-3PY"/>
+                                    <constraint firstAttribute="width" constant="27" id="xbA-WP-iEU"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Weather_Rain" translatesAutoresizingMaskIntoConstraints="NO" id="nLW-oY-EQ1">
+                                <rect key="frame" x="115" y="198" width="90" height="90"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="90" id="Jho-19-g05"/>
+                                    <constraint firstAttribute="height" constant="90" id="tbY-bV-xEw"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nlq-JJ-8Z1">
+                                <rect key="frame" x="245" y="530" width="55" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="Icon_Game">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="2Ot-gs-Z0G" kind="modal" id="8jV-kU-OAG"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vwI-ey-rkA">
+                                <rect key="frame" x="20" y="530" width="55" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="SZB-Gn-J1A"/>
+                                </constraints>
+                                <state key="normal" image="Icon_Heart">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="hugTapped:" destination="fLF-NW-nWK" eventType="touchUpInside" id="Som-Gn-F1w"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="vwI-ey-rkA" firstAttribute="centerY" secondItem="nlq-JJ-8Z1" secondAttribute="centerY" id="7RH-Da-f8p"/>
+                            <constraint firstItem="N8u-hn-Ow5" firstAttribute="top" secondItem="cct-DP-VzM" secondAttribute="bottom" constant="8" symbolic="YES" id="7t8-QK-WQY"/>
+                            <constraint firstItem="nLW-oY-EQ1" firstAttribute="centerX" secondItem="aKF-ka-Zsb" secondAttribute="centerX" id="A5C-i6-gv7"/>
+                            <constraint firstItem="aKF-ka-Zsb" firstAttribute="top" secondItem="eMC-oK-7UG" secondAttribute="top" constant="20" symbolic="YES" id="Itm-Di-XNM"/>
+                            <constraint firstItem="wzQ-YN-gBu" firstAttribute="leading" secondItem="N8u-hn-Ow5" secondAttribute="trailing" constant="8" symbolic="YES" id="JDo-dw-746"/>
+                            <constraint firstItem="vwI-ey-rkA" firstAttribute="leading" secondItem="eMC-oK-7UG" secondAttribute="leading" constant="20" id="LIu-Ci-nmS"/>
+                            <constraint firstItem="wzQ-YN-gBu" firstAttribute="bottom" secondItem="N8u-hn-Ow5" secondAttribute="bottom" id="MbB-Vc-n2X"/>
+                            <constraint firstItem="cct-DP-VzM" firstAttribute="centerX" secondItem="nLW-oY-EQ1" secondAttribute="centerX" id="QOe-Ko-xLp"/>
+                            <constraint firstItem="nlq-JJ-8Z1" firstAttribute="top" secondItem="N8u-hn-Ow5" secondAttribute="bottom" constant="8" symbolic="YES" id="TMB-VP-xDM"/>
+                            <constraint firstAttribute="centerX" secondItem="cct-DP-VzM" secondAttribute="centerX" id="Wie-Wx-OSj"/>
+                            <constraint firstAttribute="centerX" secondItem="N8u-hn-Ow5" secondAttribute="centerX" constant="-0.5" id="XnQ-Ks-CbY"/>
+                            <constraint firstAttribute="centerX" secondItem="nLW-oY-EQ1" secondAttribute="centerX" id="beC-hV-sjP"/>
+                            <constraint firstItem="fFA-9Y-sy6" firstAttribute="top" secondItem="nlq-JJ-8Z1" secondAttribute="bottom" constant="20" symbolic="YES" id="cEu-7X-sNk"/>
+                            <constraint firstItem="cct-DP-VzM" firstAttribute="top" secondItem="nLW-oY-EQ1" secondAttribute="bottom" constant="8" symbolic="YES" id="lwf-Y0-XBW"/>
+                            <constraint firstAttribute="trailing" secondItem="nlq-JJ-8Z1" secondAttribute="trailing" constant="20" symbolic="YES" id="m3h-AE-Ysy"/>
+                        </constraints>
+                    </view>
+                    <extendedEdge key="edgesForExtendedLayout"/>
+                    <connections>
+                        <outlet property="avatarImageView" destination="cct-DP-VzM" id="oZE-xM-FcE"/>
+                        <outlet property="callAvailabilityImageView" destination="wzQ-YN-gBu" id="reL-xQ-Jmo"/>
+                        <outlet property="timeLabel" destination="N8u-hn-Ow5" id="GZB-jP-eeL"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fem-2I-udp" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-261" y="-794"/>
+        </scene>
     </scenes>
     <resources>
         <image name="Boy_Emotion_Happy" width="100" height="100"/>
         <image name="Boy_Home_Normal" width="100" height="180"/>
         <image name="Icon_Game" width="55" height="30"/>
+        <image name="Icon_Heart" width="55" height="50"/>
         <image name="Weather_Cloudy" width="160" height="160"/>
+        <image name="Weather_Rain" width="160" height="160"/>
         <image name="game_over.png" width="198" height="38"/>
         <image name="get_ready.png" width="130" height="40"/>
         <image name="medal_bronze.png" width="44" height="44"/>
