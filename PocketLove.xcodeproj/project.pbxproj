@@ -288,6 +288,7 @@
 		5C428C411917114F008D12A8 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				D1BB3807191B64FB009A0423 /* 2048Images */,
 				D1BB37B1191B4AA5009A0423 /* FlappyImages */,
 				5C428C4219171163008D12A8 /* pixelated.ttf */,
 			);
@@ -473,6 +474,13 @@
 				D1BB379A191B48A5009A0423 /* Constants.h */,
 			);
 			name = Constants;
+			sourceTree = "<group>";
+		};
+		D1BB3807191B64FB009A0423 /* 2048Images */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = 2048Images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
