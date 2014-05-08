@@ -31,6 +31,27 @@
 		5CA188951919EE84001130BB /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5CA188941919EE84001130BB /* QuartzCore.framework */; };
 		5CA188981919F165001130BB /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5CA188961919F165001130BB /* Main_iPhone.storyboard */; };
 		5CA1889C1919F29E001130BB /* ImageCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CA1889B1919F29E001130BB /* ImageCollectionViewCell.m */; };
+		D1BB379D191B48FC009A0423 /* Score.m in Sources */ = {isa = PBXBuildFile; fileRef = D1BB379C191B48FC009A0423 /* Score.m */; };
+		D1BB37A0191B492B009A0423 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D1BB379F191B492B009A0423 /* ViewController.m */; };
+		D1BB37A5191B49EE009A0423 /* Scene.m in Sources */ = {isa = PBXBuildFile; fileRef = D1BB37A4191B49EE009A0423 /* Scene.m */; };
+		D1BB37AB191B4A18009A0423 /* SKScrollingNode.m in Sources */ = {isa = PBXBuildFile; fileRef = D1BB37A8191B4A18009A0423 /* SKScrollingNode.m */; };
+		D1BB37AC191B4A18009A0423 /* BirdNode.m in Sources */ = {isa = PBXBuildFile; fileRef = D1BB37AA191B4A18009A0423 /* BirdNode.m */; };
+		D1BB37AF191B4A7D009A0423 /* Math.m in Sources */ = {isa = PBXBuildFile; fileRef = D1BB37AE191B4A7D009A0423 /* Math.m */; };
+		D1BB37C1191B4AB9009A0423 /* medal_silver@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D1BB37B2191B4AB9009A0423 /* medal_silver@2x.png */; };
+		D1BB37C2191B4AB9009A0423 /* medal_gold@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D1BB37B3191B4AB9009A0423 /* medal_gold@2x.png */; };
+		D1BB37C3191B4AB9009A0423 /* medal_bronze@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D1BB37B4191B4AB9009A0423 /* medal_bronze@2x.png */; };
+		D1BB37C4191B4AB9009A0423 /* back@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D1BB37B5191B4AB9009A0423 /* back@2x.png */; };
+		D1BB37C5191B4AB9009A0423 /* medal_plate@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D1BB37B6191B4AB9009A0423 /* medal_plate@2x.png */; };
+		D1BB37C6191B4AB9009A0423 /* game_over@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D1BB37B7191B4AB9009A0423 /* game_over@2x.png */; };
+		D1BB37C7191B4AB9009A0423 /* medal_platinum@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D1BB37B8191B4AB9009A0423 /* medal_platinum@2x.png */; };
+		D1BB37C8191B4AB9009A0423 /* taptap@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D1BB37B9191B4AB9009A0423 /* taptap@2x.png */; };
+		D1BB37C9191B4AB9009A0423 /* get_ready@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D1BB37BA191B4AB9009A0423 /* get_ready@2x.png */; };
+		D1BB37CA191B4AB9009A0423 /* bird_1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D1BB37BB191B4AB9009A0423 /* bird_1@2x.png */; };
+		D1BB37CB191B4AB9009A0423 /* bird_2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D1BB37BC191B4AB9009A0423 /* bird_2@2x.png */; };
+		D1BB37CC191B4AB9009A0423 /* bird_3@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D1BB37BD191B4AB9009A0423 /* bird_3@2x.png */; };
+		D1BB37CD191B4AB9009A0423 /* floor@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D1BB37BE191B4AB9009A0423 /* floor@2x.png */; };
+		D1BB37CE191B4AB9009A0423 /* pipe_top@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D1BB37BF191B4AB9009A0423 /* pipe_top@2x.png */; };
+		D1BB37CF191B4AB9009A0423 /* pipe_bottom@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D1BB37C0191B4AB9009A0423 /* pipe_bottom@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -80,6 +101,35 @@
 		5CA188971919F165001130BB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
 		5CA1889A1919F29E001130BB /* ImageCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageCollectionViewCell.h; sourceTree = "<group>"; };
 		5CA1889B1919F29E001130BB /* ImageCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageCollectionViewCell.m; sourceTree = "<group>"; };
+		D1BB3799191B488B009A0423 /* Macros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Macros.h; sourceTree = "<group>"; };
+		D1BB379A191B48A5009A0423 /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
+		D1BB379B191B48FC009A0423 /* Score.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Score.h; sourceTree = "<group>"; };
+		D1BB379C191B48FC009A0423 /* Score.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Score.m; sourceTree = "<group>"; };
+		D1BB379E191B492B009A0423 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		D1BB379F191B492B009A0423 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		D1BB37A3191B49EE009A0423 /* Scene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Scene.h; sourceTree = "<group>"; };
+		D1BB37A4191B49EE009A0423 /* Scene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Scene.m; sourceTree = "<group>"; };
+		D1BB37A7191B4A18009A0423 /* SKScrollingNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKScrollingNode.h; sourceTree = "<group>"; };
+		D1BB37A8191B4A18009A0423 /* SKScrollingNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKScrollingNode.m; sourceTree = "<group>"; };
+		D1BB37A9191B4A18009A0423 /* BirdNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BirdNode.h; sourceTree = "<group>"; };
+		D1BB37AA191B4A18009A0423 /* BirdNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BirdNode.m; sourceTree = "<group>"; };
+		D1BB37AD191B4A7D009A0423 /* Math.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Math.h; sourceTree = "<group>"; };
+		D1BB37AE191B4A7D009A0423 /* Math.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Math.m; sourceTree = "<group>"; };
+		D1BB37B2191B4AB9009A0423 /* medal_silver@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "medal_silver@2x.png"; sourceTree = "<group>"; };
+		D1BB37B3191B4AB9009A0423 /* medal_gold@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "medal_gold@2x.png"; sourceTree = "<group>"; };
+		D1BB37B4191B4AB9009A0423 /* medal_bronze@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "medal_bronze@2x.png"; sourceTree = "<group>"; };
+		D1BB37B5191B4AB9009A0423 /* back@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "back@2x.png"; sourceTree = "<group>"; };
+		D1BB37B6191B4AB9009A0423 /* medal_plate@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "medal_plate@2x.png"; sourceTree = "<group>"; };
+		D1BB37B7191B4AB9009A0423 /* game_over@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "game_over@2x.png"; sourceTree = "<group>"; };
+		D1BB37B8191B4AB9009A0423 /* medal_platinum@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "medal_platinum@2x.png"; sourceTree = "<group>"; };
+		D1BB37B9191B4AB9009A0423 /* taptap@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "taptap@2x.png"; sourceTree = "<group>"; };
+		D1BB37BA191B4AB9009A0423 /* get_ready@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "get_ready@2x.png"; sourceTree = "<group>"; };
+		D1BB37BB191B4AB9009A0423 /* bird_1@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bird_1@2x.png"; sourceTree = "<group>"; };
+		D1BB37BC191B4AB9009A0423 /* bird_2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bird_2@2x.png"; sourceTree = "<group>"; };
+		D1BB37BD191B4AB9009A0423 /* bird_3@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bird_3@2x.png"; sourceTree = "<group>"; };
+		D1BB37BE191B4AB9009A0423 /* floor@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "floor@2x.png"; sourceTree = "<group>"; };
+		D1BB37BF191B4AB9009A0423 /* pipe_top@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pipe_top@2x.png"; sourceTree = "<group>"; };
+		D1BB37C0191B4AB9009A0423 /* pipe_bottom@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pipe_bottom@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -143,11 +193,15 @@
 		5C1B906F1916FB6700293400 /* PocketLove */ = {
 			isa = PBXGroup;
 			children = (
+				D1BB379A191B48A5009A0423 /* Constants.h */,
+				D1BB3799191B488B009A0423 /* Macros.h */,
 				5C846A03191ADF64001A25A0 /* PLConstants.h */,
 				5C846A04191ADF64001A25A0 /* PLConstants.m */,
 				5CA188991919F25C001130BB /* Views */,
 				5CA188901919E426001130BB /* Model */,
 				5CA1888F1919E420001130BB /* Controllers */,
+				D1BB37A1191B494D009A0423 /* Scenes */,
+				D1BB37B0191B4A83009A0423 /* Helpers */,
 				5C428C411917114F008D12A8 /* Resources */,
 				5CA188961919F165001130BB /* Main_iPhone.storyboard */,
 				5C1B90841916FB6700293400 /* Images.xcassets */,
@@ -190,6 +244,7 @@
 		5C428C411917114F008D12A8 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				D1BB37B1191B4AA5009A0423 /* Images */,
 				5C428C4219171163008D12A8 /* pixelated.ttf */,
 			);
 			name = Resources;
@@ -198,16 +253,9 @@
 		5CA1888F1919E420001130BB /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				5C428C4419171736008D12A8 /* PLAvatarUpdateViewController.h */,
-				5C428C4519171736008D12A8 /* PLAvatarUpdateViewController.m */,
-				5C1B90ED1917028300293400 /* PLCharacterViewController.h */,
-				5C1B90EE1917028300293400 /* PLCharacterViewController.m */,
-				5C1B90F0191702AE00293400 /* PLMyCharacterViewController.h */,
-				5C1B90F1191702AE00293400 /* PLMyCharacterViewController.m */,
-				5C1B90F3191702CE00293400 /* PLOtherCharacterViewController.h */,
-				5C1B90F4191702CE00293400 /* PLOtherCharacterViewController.m */,
-				5C1B90F6191707B100293400 /* PLRootViewController.h */,
-				5C1B90F7191707B100293400 /* PLRootViewController.m */,
+				D1BB379E191B492B009A0423 /* ViewController.h */,
+				D1BB379F191B492B009A0423 /* ViewController.m */,
+				D1BB37A2191B4966009A0423 /* CharacterControllers */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -215,6 +263,8 @@
 		5CA188901919E426001130BB /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				D1BB379B191B48FC009A0423 /* Score.h */,
+				D1BB379C191B48FC009A0423 /* Score.m */,
 				5CA188911919E444001130BB /* Avatar.h */,
 				5CA188921919E444001130BB /* Avatar.m */,
 			);
@@ -228,6 +278,75 @@
 				5CA1889B1919F29E001130BB /* ImageCollectionViewCell.m */,
 			);
 			name = Views;
+			sourceTree = "<group>";
+		};
+		D1BB37A1191B494D009A0423 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				D1BB37A6191B4A06009A0423 /* Nodes */,
+				D1BB37A3191B49EE009A0423 /* Scene.h */,
+				D1BB37A4191B49EE009A0423 /* Scene.m */,
+			);
+			name = Scenes;
+			sourceTree = "<group>";
+		};
+		D1BB37A2191B4966009A0423 /* CharacterControllers */ = {
+			isa = PBXGroup;
+			children = (
+				5C1B90EE1917028300293400 /* PLCharacterViewController.m */,
+				5C1B90F0191702AE00293400 /* PLMyCharacterViewController.h */,
+				5C1B90F1191702AE00293400 /* PLMyCharacterViewController.m */,
+				5C1B90F3191702CE00293400 /* PLOtherCharacterViewController.h */,
+				5C1B90F4191702CE00293400 /* PLOtherCharacterViewController.m */,
+				5C1B90F6191707B100293400 /* PLRootViewController.h */,
+				5C1B90F7191707B100293400 /* PLRootViewController.m */,
+				5C428C4419171736008D12A8 /* PLAvatarUpdateViewController.h */,
+				5C428C4519171736008D12A8 /* PLAvatarUpdateViewController.m */,
+				5C1B90ED1917028300293400 /* PLCharacterViewController.h */,
+			);
+			name = CharacterControllers;
+			sourceTree = "<group>";
+		};
+		D1BB37A6191B4A06009A0423 /* Nodes */ = {
+			isa = PBXGroup;
+			children = (
+				D1BB37A7191B4A18009A0423 /* SKScrollingNode.h */,
+				D1BB37A8191B4A18009A0423 /* SKScrollingNode.m */,
+				D1BB37A9191B4A18009A0423 /* BirdNode.h */,
+				D1BB37AA191B4A18009A0423 /* BirdNode.m */,
+			);
+			name = Nodes;
+			sourceTree = "<group>";
+		};
+		D1BB37B0191B4A83009A0423 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				D1BB37AD191B4A7D009A0423 /* Math.h */,
+				D1BB37AE191B4A7D009A0423 /* Math.m */,
+			);
+			name = Helpers;
+			sourceTree = "<group>";
+		};
+		D1BB37B1191B4AA5009A0423 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				D1BB37B2191B4AB9009A0423 /* medal_silver@2x.png */,
+				D1BB37B3191B4AB9009A0423 /* medal_gold@2x.png */,
+				D1BB37B4191B4AB9009A0423 /* medal_bronze@2x.png */,
+				D1BB37B5191B4AB9009A0423 /* back@2x.png */,
+				D1BB37B6191B4AB9009A0423 /* medal_plate@2x.png */,
+				D1BB37B7191B4AB9009A0423 /* game_over@2x.png */,
+				D1BB37B8191B4AB9009A0423 /* medal_platinum@2x.png */,
+				D1BB37B9191B4AB9009A0423 /* taptap@2x.png */,
+				D1BB37BA191B4AB9009A0423 /* get_ready@2x.png */,
+				D1BB37BB191B4AB9009A0423 /* bird_1@2x.png */,
+				D1BB37BC191B4AB9009A0423 /* bird_2@2x.png */,
+				D1BB37BD191B4AB9009A0423 /* bird_3@2x.png */,
+				D1BB37BE191B4AB9009A0423 /* floor@2x.png */,
+				D1BB37BF191B4AB9009A0423 /* pipe_top@2x.png */,
+				D1BB37C0191B4AB9009A0423 /* pipe_bottom@2x.png */,
+			);
+			name = Images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -307,10 +426,25 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D1BB37CE191B4AB9009A0423 /* pipe_top@2x.png in Resources */,
+				D1BB37C8191B4AB9009A0423 /* taptap@2x.png in Resources */,
 				5C1B90851916FB6700293400 /* Images.xcassets in Resources */,
+				D1BB37CD191B4AB9009A0423 /* floor@2x.png in Resources */,
+				D1BB37C4191B4AB9009A0423 /* back@2x.png in Resources */,
+				D1BB37C9191B4AB9009A0423 /* get_ready@2x.png in Resources */,
 				5CA188981919F165001130BB /* Main_iPhone.storyboard in Resources */,
 				5C428C4319171163008D12A8 /* pixelated.ttf in Resources */,
+				D1BB37CB191B4AB9009A0423 /* bird_2@2x.png in Resources */,
+				D1BB37C3191B4AB9009A0423 /* medal_bronze@2x.png in Resources */,
+				D1BB37CA191B4AB9009A0423 /* bird_1@2x.png in Resources */,
 				5C1B90741916FB6700293400 /* InfoPlist.strings in Resources */,
+				D1BB37C6191B4AB9009A0423 /* game_over@2x.png in Resources */,
+				D1BB37C2191B4AB9009A0423 /* medal_gold@2x.png in Resources */,
+				D1BB37C7191B4AB9009A0423 /* medal_platinum@2x.png in Resources */,
+				D1BB37CF191B4AB9009A0423 /* pipe_bottom@2x.png in Resources */,
+				D1BB37CC191B4AB9009A0423 /* bird_3@2x.png in Resources */,
+				D1BB37C1191B4AB9009A0423 /* medal_silver@2x.png in Resources */,
+				D1BB37C5191B4AB9009A0423 /* medal_plate@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -333,8 +467,14 @@
 				5C1B907A1916FB6700293400 /* PLAppDelegate.m in Sources */,
 				5CA188931919E444001130BB /* Avatar.m in Sources */,
 				5C1B90F5191702CE00293400 /* PLOtherCharacterViewController.m in Sources */,
+				D1BB379D191B48FC009A0423 /* Score.m in Sources */,
+				D1BB37A5191B49EE009A0423 /* Scene.m in Sources */,
+				D1BB37AC191B4A18009A0423 /* BirdNode.m in Sources */,
 				5CA1889C1919F29E001130BB /* ImageCollectionViewCell.m in Sources */,
+				D1BB37AB191B4A18009A0423 /* SKScrollingNode.m in Sources */,
+				D1BB37A0191B492B009A0423 /* ViewController.m in Sources */,
 				5C846A05191ADF64001A25A0 /* PLConstants.m in Sources */,
+				D1BB37AF191B4A7D009A0423 /* Math.m in Sources */,
 				5C1B90F8191707B100293400 /* PLRootViewController.m in Sources */,
 				5C1B90F2191702AE00293400 /* PLMyCharacterViewController.m in Sources */,
 				5C1B90EF1917028300293400 /* PLCharacterViewController.m in Sources */,
