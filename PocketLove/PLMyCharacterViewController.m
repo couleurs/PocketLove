@@ -20,6 +20,12 @@
     return [NSDate date];
 }
 
+- (NSString *)avatarLogin
+{
+    //    NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
+    //    return [userDefaults objectForKey:@"OtherNameKey"];
+    return @"Johan";
+}
 #pragma mark - Segues
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender

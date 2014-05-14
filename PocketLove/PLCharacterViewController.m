@@ -14,6 +14,7 @@
 @property (weak, nonatomic) IBOutlet UILabel *timeLabel;
 @property (weak, nonatomic) IBOutlet UIImageView *avatarImageView;
 @property (weak, nonatomic) IBOutlet UIImageView *callAvailabilityImageView;
+@property (weak, nonatomic) IBOutlet UILabel *nicknameLabel;
 
 @end
 
@@ -23,7 +24,7 @@
 {
     if (!_avatar) {
         _avatar = [[Avatar alloc] init];
-        _avatar.mood = 0;
+        _avatar.login = [self avatarLogin];
     }
     return _avatar;
 }
@@ -44,6 +45,15 @@
 {
     [super viewDidLoad];
     self.view.backgroundColor = [PLConstants backgroundColor];
+    
+//    [[NSNotificationCenter defaultCenter] addObserver:self
+//                                             selector:@selector(initializeAvatar)
+//                                                 name:@"LoginReady"
+//                                               object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self
+                                             selector:@selector(updateUI)
+                                                 name:@"MoodChanged"
+                                               object:nil];
 }
 
 - (void)updateUI
@@ -51,6 +61,8 @@
     //labels
     self.timeLabel.text = [self formattedStringFromDate:[self currentTime]];
     [self.timeLabel sizeToFit];
+    self.nicknameLabel.text = self.avatar.login;
+    [self.nicknameLabel sizeToFit];
     
     //avatar
     self.avatarImageView.image = [self imageForMood:self.avatar.mood];
@@ -80,9 +92,9 @@
     return nil;
 }
 
-- (NSUInteger)avatarGender
+- (NSString *)avatarLogin
 {
-    return 0;
+    return @"";
 }
 
 #pragma mark - Privates
@@ -90,7 +102,8 @@
 - (UIImage *)imageForMood:(NSUInteger)mood
 {
     NSArray *moodStrings =[PLConstants moodStrings];
-    NSString *imageName = [NSString stringWithFormat:@"%@_%@_%@", [self stringForGender:[self avatarGender]], [self stringForWorkStatus:self.avatar.isAtWork], moodStrings[mood]];
+    NSLog(@"==============> %d", self.avatar.gender);
+    NSString *imageName = [NSString stringWithFormat:@"%@_%@_%@", [self stringForGender:self.avatar.gender], [self stringForWorkStatus:self.avatar.isAtWork], moodStrings[mood]];
     return [UIImage imageNamed:imageName];
 }
 

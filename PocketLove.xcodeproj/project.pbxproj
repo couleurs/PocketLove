@@ -27,10 +27,17 @@
 		5C428C4319171163008D12A8 /* pixelated.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5C428C4219171163008D12A8 /* pixelated.ttf */; };
 		5C428C4619171736008D12A8 /* PLAvatarUpdateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C428C4519171736008D12A8 /* PLAvatarUpdateViewController.m */; };
 		5C846A05191ADF64001A25A0 /* PLConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C846A04191ADF64001A25A0 /* PLConstants.m */; };
+		5C975ADC1923DAEF00598912 /* Firebase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C975ADB1923DAEF00598912 /* Firebase.framework */; };
+		5C975ADE1923DB0300598912 /* libc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C975ADD1923DB0300598912 /* libc++.dylib */; };
+		5C975AE01923DB1000598912 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C975ADF1923DB1000598912 /* SystemConfiguration.framework */; };
+		5C975AE31923E9D700598912 /* PLLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C975AE21923E9D700598912 /* PLLoginViewController.m */; };
 		5CA188931919E444001130BB /* Avatar.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CA188921919E444001130BB /* Avatar.m */; };
 		5CA188951919EE84001130BB /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5CA188941919EE84001130BB /* QuartzCore.framework */; };
 		5CA188981919F165001130BB /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5CA188961919F165001130BB /* Main_iPhone.storyboard */; };
 		5CA1889C1919F29E001130BB /* ImageCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CA1889B1919F29E001130BB /* ImageCollectionViewCell.m */; };
+		5CE2603C1922EAAC00AA77DD /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5CE2603B1922EAAC00AA77DD /* CFNetwork.framework */; };
+		5CE2603E1922EAB100AA77DD /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5CE2603D1922EAB100AA77DD /* Security.framework */; };
+		5CE260401922EAC000AA77DD /* libicucore.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 5CE2603F1922EAC000AA77DD /* libicucore.dylib */; };
 		D1BB379D191B48FC009A0423 /* Score.m in Sources */ = {isa = PBXBuildFile; fileRef = D1BB379C191B48FC009A0423 /* Score.m */; };
 		D1BB37A0191B492B009A0423 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D1BB379F191B492B009A0423 /* ViewController.m */; };
 		D1BB37A5191B49EE009A0423 /* Scene.m in Sources */ = {isa = PBXBuildFile; fileRef = D1BB37A4191B49EE009A0423 /* Scene.m */; };
@@ -111,12 +118,20 @@
 		5C428C4519171736008D12A8 /* PLAvatarUpdateViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PLAvatarUpdateViewController.m; sourceTree = "<group>"; };
 		5C846A03191ADF64001A25A0 /* PLConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PLConstants.h; sourceTree = "<group>"; };
 		5C846A04191ADF64001A25A0 /* PLConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PLConstants.m; sourceTree = "<group>"; };
+		5C975ADB1923DAEF00598912 /* Firebase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Firebase.framework; sourceTree = "<group>"; };
+		5C975ADD1923DB0300598912 /* libc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libc++.dylib"; path = "usr/lib/libc++.dylib"; sourceTree = SDKROOT; };
+		5C975ADF1923DB1000598912 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		5C975AE11923E9D700598912 /* PLLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PLLoginViewController.h; sourceTree = "<group>"; };
+		5C975AE21923E9D700598912 /* PLLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PLLoginViewController.m; sourceTree = "<group>"; };
 		5CA188911919E444001130BB /* Avatar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Avatar.h; sourceTree = "<group>"; };
 		5CA188921919E444001130BB /* Avatar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Avatar.m; sourceTree = "<group>"; };
 		5CA188941919EE84001130BB /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		5CA188971919F165001130BB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
 		5CA1889A1919F29E001130BB /* ImageCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageCollectionViewCell.h; sourceTree = "<group>"; };
 		5CA1889B1919F29E001130BB /* ImageCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageCollectionViewCell.m; sourceTree = "<group>"; };
+		5CE2603B1922EAAC00AA77DD /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		5CE2603D1922EAB100AA77DD /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		5CE2603F1922EAC000AA77DD /* libicucore.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libicucore.dylib; path = usr/lib/libicucore.dylib; sourceTree = SDKROOT; };
 		D1BB3799191B488B009A0423 /* Macros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Macros.h; sourceTree = "<group>"; };
 		D1BB379A191B48A5009A0423 /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
 		D1BB379B191B48FC009A0423 /* Score.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Score.h; sourceTree = "<group>"; };
@@ -184,6 +199,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5C975AE01923DB1000598912 /* SystemConfiguration.framework in Frameworks */,
+				5C975ADE1923DB0300598912 /* libc++.dylib in Frameworks */,
+				5CE260401922EAC000AA77DD /* libicucore.dylib in Frameworks */,
+				5C975ADC1923DAEF00598912 /* Firebase.framework in Frameworks */,
+				5CE2603E1922EAB100AA77DD /* Security.framework in Frameworks */,
+				5CE2603C1922EAAC00AA77DD /* CFNetwork.framework in Frameworks */,
 				5CA188951919EE84001130BB /* QuartzCore.framework in Frameworks */,
 				5C1B90A21916FC5600293400 /* SpriteKit.framework in Frameworks */,
 				5C1B906C1916FB6700293400 /* CoreGraphics.framework in Frameworks */,
@@ -227,6 +248,12 @@
 		5C1B90681916FB6600293400 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				5C975ADF1923DB1000598912 /* SystemConfiguration.framework */,
+				5C975ADD1923DB0300598912 /* libc++.dylib */,
+				5C975ADB1923DAEF00598912 /* Firebase.framework */,
+				5CE2603F1922EAC000AA77DD /* libicucore.dylib */,
+				5CE2603D1922EAB100AA77DD /* Security.framework */,
+				5CE2603B1922EAAC00AA77DD /* CFNetwork.framework */,
 				5CA188941919EE84001130BB /* QuartzCore.framework */,
 				5C1B90A11916FC5600293400 /* SpriteKit.framework */,
 				5C1B90691916FB6600293400 /* Foundation.framework */,
@@ -295,14 +322,24 @@
 			name = Resources;
 			sourceTree = "<group>";
 		};
-		5CA1888F1919E420001130BB /* Controllers */ = {
+		5C975AE41923E9E600598912 /* Games */ = {
 			isa = PBXGroup;
 			children = (
 				D1BB37E1191B5CB5009A0423 /* 2048Controllers */,
 				D1BB37D2191B52CE009A0423 /* PLGameMenuViewController.h */,
 				D1BB37D3191B52CE009A0423 /* PLGameMenuViewController.m */,
 				D1BB3801191B5D54009A0423 /* FlappyControllers */,
+			);
+			name = Games;
+			sourceTree = "<group>";
+		};
+		5CA1888F1919E420001130BB /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				5C975AE41923E9E600598912 /* Games */,
 				D1BB37A2191B4966009A0423 /* CharacterControllers */,
+				5C975AE11923E9D700598912 /* PLLoginViewController.h */,
+				5C975AE21923E9D700598912 /* PLLoginViewController.m */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -609,6 +646,7 @@
 				D1BB37A5191B49EE009A0423 /* Scene.m in Sources */,
 				D1BB37AC191B4A18009A0423 /* BirdNode.m in Sources */,
 				5CA1889C1919F29E001130BB /* ImageCollectionViewCell.m in Sources */,
+				5C975AE31923E9D700598912 /* PLLoginViewController.m in Sources */,
 				D1BB37AB191B4A18009A0423 /* SKScrollingNode.m in Sources */,
 				D1BB37A0191B492B009A0423 /* ViewController.m in Sources */,
 				D1BB37D4191B52CE009A0423 /* PLGameMenuViewController.m in Sources */,
@@ -755,10 +793,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "PocketLove/PocketLove-Prefix.pch";
 				INFOPLIST_FILE = "PocketLove/PocketLove-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
@@ -770,10 +813,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "PocketLove/PocketLove-Prefix.pch";
 				INFOPLIST_FILE = "PocketLove/PocketLove-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;

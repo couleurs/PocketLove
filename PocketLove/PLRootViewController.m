@@ -9,6 +9,7 @@
 #import "PLRootViewController.h"
 #import "PLOtherCharacterViewController.h"
 #import "PLMyCharacterViewController.h"
+#import "PLLoginViewController.h"
 
 @interface PLRootViewController ()
 
@@ -56,6 +57,16 @@
     [self setupPageViewController];
 }
 
+- (void)viewDidAppear:(BOOL)animated
+{
+    [super viewDidAppear:animated];
+    NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
+    if (![userDefaults objectForKey:@"LoggedIn"]) {
+        PLLoginViewController *lvc = [self.storyboard instantiateViewControllerWithIdentifier:@"PLLoginViewController"];
+        [self presentViewController:lvc animated:YES completion:NULL];
+    }
+}
+
 #pragma mark - Page View Controller Data Source
 
 - (UIViewController *)pageViewController:(UIPageViewController *)pageViewController viewControllerBeforeViewController:(UIViewController *)viewController
@@ -80,6 +91,24 @@
 - (NSInteger)presentationIndexForPageViewController:(UIPageViewController *)pageViewController
 {
     return 0;
+}
+
+#pragma mark - Segues
+
+- (IBAction)loginControllerDismissed:(UIStoryboardSegue *)segue
+{
+    NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
+    
+    PLLoginViewController *lvc = segue.sourceViewController;
+    
+    //What if text fields are empty?
+    [userDefaults setValue:lvc.yourNameTextField.text forKey:@"YourNameKey"];
+    [userDefaults setValue:lvc.otherNameTextField.text forKey:@"OtherNameKey"];
+    [userDefaults setValue:@(YES) forKey:@"LoggedIn"];
+    [userDefaults synchronize];
+    
+    [[NSNotificationCenter defaultCenter] postNotificationName:@"LoginReady"
+                                                        object:nil];
 }
 
 @end

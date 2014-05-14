@@ -22,9 +22,11 @@
     return [now dateByAddingTimeInterval:3*60*60];
 }
 
-- (NSUInteger)avatarGender
+- (NSString *)avatarLogin
 {
-    return 1;
+//    NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
+//    return [userDefaults objectForKey:@"OtherNameKey"];
+    return @"Kasey";
 }
 
 - (IBAction)goToOtherCharacterView :(UIStoryboardSegue*)segue {

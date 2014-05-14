@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="13C1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="I8o-MA-oXT">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5053" systemVersion="12F45" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="I8o-MA-oXT">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
     </dependencies>
@@ -78,12 +78,71 @@
                     <connections>
                         <outlet property="avatarImageView" destination="xy7-Qz-psL" id="QkD-mp-2as"/>
                         <outlet property="callAvailabilityImageView" destination="rBF-ap-Acd" id="pBM-Lc-Cbz"/>
+                        <outlet property="nicknameLabel" destination="w6h-MA-Gs5" id="3sF-Ch-GaT"/>
                         <outlet property="timeLabel" destination="KFm-4g-lHo" id="HXD-Z0-EA0"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="243" y="-794"/>
+        </scene>
+        <!--Login View Controller-->
+        <scene sceneID="p5y-ra-eRg">
+            <objects>
+                <viewController storyboardIdentifier="PLLoginViewController" id="eMY-3i-ewJ" customClass="PLLoginViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="h0S-Fb-lrb"/>
+                        <viewControllerLayoutGuide type="bottom" id="MCh-Dk-f0Z"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8MB-7R-uNV">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YLV-om-BsS">
+                                <rect key="frame" x="141" y="120" width="38" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Login">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="gxS-41-jeK" kind="unwind" unwindAction="loginControllerDismissed:" id="xJ6-7t-1Bg"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Your name" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Alz-yx-VSe">
+                                <rect key="frame" x="20" y="44" width="280" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Other name" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2C5-Qw-l50">
+                                <rect key="frame" x="20" y="82" width="280" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="2C5-Qw-l50" firstAttribute="centerX" secondItem="YLV-om-BsS" secondAttribute="centerX" id="4AA-7P-QhU"/>
+                            <constraint firstItem="YLV-om-BsS" firstAttribute="top" secondItem="2C5-Qw-l50" secondAttribute="bottom" constant="8" id="5gO-um-Cpf"/>
+                            <constraint firstItem="2C5-Qw-l50" firstAttribute="top" secondItem="Alz-yx-VSe" secondAttribute="bottom" constant="8" id="5pT-cP-nlL"/>
+                            <constraint firstItem="Alz-yx-VSe" firstAttribute="top" secondItem="h0S-Fb-lrb" secondAttribute="bottom" constant="24" id="DbE-lI-UY8"/>
+                            <constraint firstItem="2C5-Qw-l50" firstAttribute="leading" secondItem="Alz-yx-VSe" secondAttribute="leading" id="JNB-88-1EZ"/>
+                            <constraint firstItem="2C5-Qw-l50" firstAttribute="trailing" secondItem="Alz-yx-VSe" secondAttribute="trailing" id="ZMu-jr-cx2"/>
+                            <constraint firstAttribute="centerX" secondItem="YLV-om-BsS" secondAttribute="centerX" id="eF4-Ll-uAz"/>
+                            <constraint firstItem="Alz-yx-VSe" firstAttribute="leading" secondItem="8MB-7R-uNV" secondAttribute="leading" constant="20" id="vme-bP-2J8"/>
+                        </constraints>
+                    </view>
+                    <extendedEdge key="edgesForExtendedLayout"/>
+                    <connections>
+                        <outlet property="otherNameTextField" destination="2C5-Qw-l50" id="smH-FS-Mh7"/>
+                        <outlet property="yourNameTextField" destination="Alz-yx-VSe" id="aE7-A9-ICh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="53M-8S-THL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="gxS-41-jeK" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="-787" y="64"/>
         </scene>
         <!--Root View Controller-->
         <scene sceneID="ITw-EF-NCo">
@@ -797,6 +856,7 @@
                     <connections>
                         <outlet property="avatarImageView" destination="cct-DP-VzM" id="oZE-xM-FcE"/>
                         <outlet property="callAvailabilityImageView" destination="wzQ-YN-gBu" id="reL-xQ-Jmo"/>
+                        <outlet property="nicknameLabel" destination="aKF-ka-Zsb" id="TKQ-xh-Uyd"/>
                         <outlet property="timeLabel" destination="N8u-hn-Ow5" id="GZB-jP-eeL"/>
                     </connections>
                 </viewController>

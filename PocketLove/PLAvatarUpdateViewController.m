@@ -35,10 +35,16 @@
     if (!_avatarMoodImages) {
         _avatarMoodImages = [[NSMutableArray alloc] init];
         for (NSString *mood in [PLConstants moodStrings]) {
-            [_avatarMoodImages addObject:[UIImage imageNamed:[NSString stringWithFormat:@"Boy_Emotion_%@", mood]]];
+            [_avatarMoodImages addObject:[UIImage imageNamed:[NSString stringWithFormat:@"%@_Emotion_%@", [self stringForGender:self.avatar.gender], mood]]];
         }
     }
     return _avatarMoodImages;
+}
+
+- (NSString *)stringForGender:(NSUInteger)gender
+{
+//    return (gender == 0) ? @"Boy" : @"Girl";
+    return @"Boy";
 }
 
 - (void)viewDidLoad
@@ -70,6 +76,7 @@
         self.avatar.callAvailability = self.callAvailabilitySwitch.isOn;
         self.avatar.atWork = self.atWorkSwitch.isOn;
         self.avatar.mood = self.selectedIndexPath.row;
+        [self.avatar save];
     }
 }
 
