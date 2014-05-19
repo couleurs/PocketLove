@@ -26,7 +26,7 @@
 {
 //    NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
 //    return [userDefaults objectForKey:@"OtherNameKey"];
-    return @"Kasey";
+    return @"Johan";
 }
 
 - (IBAction)goToOtherCharacterView :(UIStoryboardSegue*)segue {

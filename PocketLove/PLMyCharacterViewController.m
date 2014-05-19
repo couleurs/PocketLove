@@ -24,7 +24,7 @@
 {
     //    NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
     //    return [userDefaults objectForKey:@"OtherNameKey"];
-    return @"Johan";
+    return @"Kasey";
 }
 #pragma mark - Segues
 

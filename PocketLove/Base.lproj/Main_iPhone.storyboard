@@ -32,8 +32,8 @@
                                     <segue destination="mlE-kR-92h" kind="modal" identifier="UpdateAvatar" id="GyR-ZN-Xdz"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Me" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w6h-MA-Gs5">
-                                <rect key="frame" x="102" y="20" width="116" height="43"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Me" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w6h-MA-Gs5">
+                                <rect key="frame" x="137" y="20" width="46" height="38"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="32"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -66,6 +66,8 @@
                             <constraint firstItem="KFm-4g-lHo" firstAttribute="top" secondItem="xy7-Qz-psL" secondAttribute="bottom" constant="8" symbolic="YES" id="K7I-44-p3n"/>
                             <constraint firstItem="KFm-4g-lHo" firstAttribute="centerX" secondItem="JvL-Sf-ZPX" secondAttribute="centerX" id="Lz7-aU-5HQ"/>
                             <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="JvL-Sf-ZPX" secondAttribute="bottom" constant="20" symbolic="YES" id="NQ6-hx-xvd"/>
+                            <constraint firstItem="w6h-MA-Gs5" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" constant="20" id="SRm-6Q-tC4"/>
+                            <constraint firstAttribute="centerX" secondItem="w6h-MA-Gs5" secondAttribute="centerX" id="axe-6j-sN9"/>
                             <constraint firstItem="rBF-ap-Acd" firstAttribute="bottom" secondItem="KFm-4g-lHo" secondAttribute="bottom" id="bCR-Ne-rBz"/>
                             <constraint firstAttribute="centerX" secondItem="0sO-qq-ggP" secondAttribute="centerX" id="bKV-85-pwh"/>
                             <constraint firstItem="JvL-Sf-ZPX" firstAttribute="top" secondItem="KFm-4g-lHo" secondAttribute="bottom" constant="8" symbolic="YES" id="kqD-6f-pQ3"/>
