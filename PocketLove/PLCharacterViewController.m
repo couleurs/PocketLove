@@ -5,7 +5,7 @@
 //  Created by Johan Ismael on 5/4/14.
 //  Copyright (c) 2014 Johan Ismael. All rights reserved.
 //
-
+#import <AudioToolbox/AudioToolbox.h>
 #import "PLCharacterViewController.h"
 #import "PLConstants.h"
 
@@ -101,7 +101,7 @@
 
 /*actual hug button?*/
 - (IBAction)hug:(id)sender {
-
+    AudioServicesPlayAlertSound(kSystemSoundID_Vibrate);
     self.avatarHeadImageView.image = [UIImage imageNamed:@"Action_Hug"];
     self.avatarBodyImageView.hidden = YES;
     self.avatarGiftImageView.hidden = YES;
@@ -115,8 +115,6 @@
 
 - (void)hugOver:(NSTimer *)timer
 {
-    
-    
 }
 
 - (void)over:(NSTimer *)timer
