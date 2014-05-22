@@ -878,6 +878,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
+                                    <action selector="hug:" destination="fLF-NW-nWK" eventType="touchUpInside" id="uDI-s1-Jja"/>
                                     <action selector="hugTapped:" destination="fLF-NW-nWK" eventType="touchUpInside" id="Som-Gn-F1w"/>
                                 </connections>
                             </button>

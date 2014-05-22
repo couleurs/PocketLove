@@ -99,9 +99,33 @@
                                     repeats:NO];
 }
 
+/*actual hug button?*/
+- (IBAction)hug:(id)sender {
+
+    self.avatarHeadImageView.image = [UIImage imageNamed:@"Action_Hug"];
+    self.avatarBodyImageView.hidden = YES;
+    self.avatarGiftImageView.hidden = YES;
+
+    [NSTimer scheduledTimerWithTimeInterval:2.0
+                                     target:self
+                                   selector:@selector(over:)
+                                   userInfo:nil
+                                    repeats:NO];
+}
+
 - (void)hugOver:(NSTimer *)timer
 {
+    
+    
 }
+
+- (void)over:(NSTimer *)timer
+{
+    self.avatarHeadImageView.image = [self headImageForMood:self.avatar.mood];
+    self.avatarBodyImageView.hidden = NO;
+    self.avatarGiftImageView.hidden = NO;
+}
+
 
 - (IBAction)PokeAlert:(id)sender {
     UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Poke Johan?"
