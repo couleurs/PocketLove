@@ -22,9 +22,8 @@
 
 - (NSString *)avatarLogin
 {
-    //    NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
-    //    return [userDefaults objectForKey:@"OtherNameKey"];
-    return @"Kasey";
+    NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
+    return [userDefaults objectForKey:@"YourNameKey"];
 }
 #pragma mark - Segues
 

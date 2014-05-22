@@ -20,4 +20,14 @@
     return @[@"Angry", @"Annoyed", @"Confused", @"Crying", @"Happy", @"Normal", @"Sad", @"Silly", @"Tired"];
 }
 
++ (NSArray *)giftStrings
+{
+    return @[@"Balloon", @"Cactus", @"Cat", @"Crown", @"Lollipop"];
+}
+
++ (NSUInteger)numGifts
+{
+    return [[self giftStrings] count];
+}
+
 @end

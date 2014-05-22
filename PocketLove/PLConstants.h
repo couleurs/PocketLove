@@ -12,5 +12,7 @@
 
 + (UIColor *)backgroundColor;
 + (NSArray *)moodStrings;
++ (NSArray *)giftStrings;
++ (NSUInteger)numGifts;
 
 @end

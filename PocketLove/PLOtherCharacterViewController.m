@@ -7,12 +7,21 @@
 //
 
 #import "PLOtherCharacterViewController.h"
+#import "PLConstants.h"
 
 @interface PLOtherCharacterViewController ()
 
 @end
 
 @implementation PLOtherCharacterViewController
+
+#pragma mark - Actions
+
+- (IBAction)giftTapped:(UIButton *)sender
+{
+    self.avatar.gift = (arc4random() % [PLConstants numGifts]) + 1;
+    [self.avatar save];
+}
 
 - (NSDate *)currentTime
 {
@@ -24,9 +33,8 @@
 
 - (NSString *)avatarLogin
 {
-//    NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
-//    return [userDefaults objectForKey:@"OtherNameKey"];
-    return @"Johan";
+    NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
+    return [userDefaults objectForKey:@"OtherNameKey"];
 }
 
 - (IBAction)goToOtherCharacterView :(UIStoryboardSegue*)segue {

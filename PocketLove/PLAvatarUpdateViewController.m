@@ -43,8 +43,7 @@
 
 - (NSString *)stringForGender:(NSUInteger)gender
 {
-//    return (gender == 0) ? @"Boy" : @"Girl";
-    return @"Boy";
+    return (gender == 0) ? @"Boy" : @"Girl";
 }
 
 - (void)viewDidLoad

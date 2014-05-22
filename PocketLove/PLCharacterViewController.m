@@ -12,9 +12,12 @@
 @interface PLCharacterViewController ()
 
 @property (weak, nonatomic) IBOutlet UILabel *timeLabel;
-@property (weak, nonatomic) IBOutlet UIImageView *avatarImageView;
 @property (weak, nonatomic) IBOutlet UIImageView *callAvailabilityImageView;
 @property (weak, nonatomic) IBOutlet UILabel *nicknameLabel;
+@property (weak, nonatomic) IBOutlet UIImageView *avatarBodyImageView;
+@property (weak, nonatomic) IBOutlet UIImageView *avatarHeadImageView;
+@property (weak, nonatomic) IBOutlet UIImageView *avatarGiftImageView;
+@property (weak, nonatomic) IBOutlet UIActivityIndicatorView *spinner;
 
 @end
 
@@ -38,26 +41,38 @@
 
 - (void)viewWillAppear:(BOOL)animated
 {
-    [self updateUI];
+    [self initializeAvatar];
 }
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
     self.view.backgroundColor = [PLConstants backgroundColor];
+    [self setAvatarHidden:YES];
     
-//    [[NSNotificationCenter defaultCenter] addObserver:self
-//                                             selector:@selector(initializeAvatar)
-//                                                 name:@"LoginReady"
-//                                               object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self
+                                             selector:@selector(initializeAvatar)
+                                                 name:@"LoginReady"
+                                               object:nil];
     [[NSNotificationCenter defaultCenter] addObserver:self
                                              selector:@selector(updateUI)
                                                  name:@"MoodChanged"
                                                object:nil];
+    
+}
+
+- (void)initializeAvatar
+{
+    NSString *avatarLogin = [self avatarLogin];
+    
+    if (avatarLogin)
+        self.avatar.login = avatarLogin;
 }
 
 - (void)updateUI
 {
+    [self setAvatarHidden:NO];
+    
     //labels
     self.timeLabel.text = [self formattedStringFromDate:[self currentTime]];
     [self.timeLabel sizeToFit];
@@ -65,14 +80,15 @@
     [self.nicknameLabel sizeToFit];
     
     //avatar
-    self.avatarImageView.image = [self imageForMood:self.avatar.mood];
+    self.avatarHeadImageView.image = [self headImageForMood:self.avatar.mood];
+    self.avatarBodyImageView.image = [self bodyImage];
+    self.avatarGiftImageView.image = [self giftImage];
     self.callAvailabilityImageView.image = [self imageForCallAvailability:self.avatar.isAvailableForCall];
 }
 
 #pragma mark - Actions
 
 - (IBAction)hugTapped:(UIButton *)sender {
-    self.avatarImageView.image = [UIImage imageNamed:@"Action_Hug"];
     [NSTimer scheduledTimerWithTimeInterval:2.0
                                      target:self
                                    selector:@selector(hugOver:)
@@ -82,7 +98,6 @@
 
 - (void)hugOver:(NSTimer *)timer
 {
-    self.avatarImageView.image = [self imageForMood:self.avatar.mood];
 }
 
 #pragma mark - Abstract methods
@@ -99,11 +114,26 @@
 
 #pragma mark - Privates
 
-- (UIImage *)imageForMood:(NSUInteger)mood
+- (UIImage *)giftImage
+{
+    if (!self.avatar.gift)
+        return nil;
+    
+    NSArray *giftStrings =[PLConstants giftStrings];
+    NSString *imageName = [NSString stringWithFormat:@"Gift_%@", giftStrings[self.avatar.gift - 1]];
+    return [UIImage imageNamed:imageName];
+}
+
+- (UIImage *)headImageForMood:(NSUInteger)mood
 {
     NSArray *moodStrings =[PLConstants moodStrings];
-    NSLog(@"==============> %d", self.avatar.gender);
-    NSString *imageName = [NSString stringWithFormat:@"%@_%@_%@", [self stringForGender:self.avatar.gender], [self stringForWorkStatus:self.avatar.isAtWork], moodStrings[mood]];
+    NSString *imageName = [NSString stringWithFormat:@"%@_Head_%@", [self stringForGender:self.avatar.gender], moodStrings[mood]];
+    return [UIImage imageNamed:imageName];
+}
+
+- (UIImage *)bodyImage
+{
+    NSString *imageName = [NSString stringWithFormat:@"%@_Body_%@", [self stringForGender:self.avatar.gender], self.avatar.isAtWork ? @"Work" : @"Home"];
     return [UIImage imageNamed:imageName];
 }
 
@@ -121,6 +151,16 @@
 - (NSString *)stringForGender:(NSUInteger)gender
 {
     return (gender == 0) ? @"Boy" : @"Girl";
+}
+
+- (void)setAvatarHidden:(BOOL)hidden
+{
+    self.avatarBodyImageView.hidden = hidden;
+    self.avatarHeadImageView.hidden = hidden;
+    self.avatarGiftImageView.hidden = hidden;
+    
+    if (!hidden)
+        [self.spinner stopAnimating];
 }
 
 @end

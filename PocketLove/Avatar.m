@@ -32,7 +32,8 @@
     [self.firebase setValue:@{@"mood": @(self.mood),
                               @"gender": @(self.gender),
                               @"atWork": @(self.atWork),
-                              @"availableForCall": @(self.isAvailableForCall)}];
+                              @"availableForCall": @(self.isAvailableForCall),
+                              @"gift": @(self.gift)}];
 }
 
 - (void)avatarValueChanged:(FDataSnapshot *)snapshot
@@ -41,8 +42,10 @@
     NSNumber *gender = snapshot.value[@"gender"];
     NSNumber *atWork = snapshot.value[@"atWork"];
     NSNumber *availableForCall = snapshot.value[@"availableForCall"];
+    NSNumber *gift = snapshot.value[@"gift"];
     self.mood = [mood integerValue];
     self.gender = [gender integerValue];
+    self.gift = [gift integerValue];
     self.atWork = [atWork boolValue];
     self.callAvailability = [availableForCall boolValue];
     [[NSNotificationCenter defaultCenter] postNotificationName:@"MoodChanged"
