@@ -18,7 +18,7 @@
 @property (weak, nonatomic) IBOutlet UIImageView *avatarHeadImageView;
 @property (weak, nonatomic) IBOutlet UIImageView *avatarGiftImageView;
 @property (weak, nonatomic) IBOutlet UIActivityIndicatorView *spinner;
-@property (weak, nonatomic) IBOutlet UIButton *AvatarMenuButton;
+
 
 @end
 
