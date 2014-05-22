@@ -18,6 +18,7 @@
 @property (weak, nonatomic) IBOutlet UIImageView *avatarHeadImageView;
 @property (weak, nonatomic) IBOutlet UIImageView *avatarGiftImageView;
 @property (weak, nonatomic) IBOutlet UIActivityIndicatorView *spinner;
+@property (weak, nonatomic) IBOutlet UIButton *AvatarMenuButton;
 
 @end
 
@@ -84,6 +85,8 @@
     self.avatarBodyImageView.image = [self bodyImage];
     self.avatarGiftImageView.image = [self giftImage];
     self.callAvailabilityImageView.image = [self imageForCallAvailability:self.avatar.isAvailableForCall];
+    
+
 }
 
 #pragma mark - Actions
@@ -100,6 +103,14 @@
 {
 }
 
+- (IBAction)PokeAlert:(id)sender {
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Poke Johan?"
+                                                    message:@""
+                                                   delegate:nil
+                                          cancelButtonTitle:@"OK"
+                                          otherButtonTitles:nil];
+    [alert show];
+}
 #pragma mark - Abstract methods
 
 - (NSDate *)currentTime

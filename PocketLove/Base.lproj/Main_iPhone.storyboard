@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5053" systemVersion="12F45" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="I8o-MA-oXT">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="13D65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="I8o-MA-oXT">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
     </dependencies>
@@ -30,6 +30,16 @@
                                 </state>
                                 <connections>
                                     <segue destination="mlE-kR-92h" kind="modal" identifier="UpdateAvatar" id="GyR-ZN-Xdz"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ojn-5r-Qc5">
+                                <rect key="frame" x="137" y="310" width="54" height="159"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="mlE-kR-92h" kind="modal" id="SR5-yc-in9"/>
                                 </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Me" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w6h-MA-Gs5">
@@ -85,6 +95,7 @@
                             <constraint firstItem="Lwb-9s-nXk" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="20" id="2Jg-cH-3jD"/>
                             <constraint firstItem="rBF-ap-Acd" firstAttribute="leading" secondItem="KFm-4g-lHo" secondAttribute="trailing" constant="8" symbolic="YES" id="3Qm-Gj-xmk"/>
                             <constraint firstItem="KFm-4g-lHo" firstAttribute="top" secondItem="Bvn-4l-8Hm" secondAttribute="bottom" constant="15" id="6Td-87-zEJ"/>
+                            <constraint firstItem="Ojn-5r-Qc5" firstAttribute="top" secondItem="Jhh-pg-ey9" secondAttribute="top" constant="41" id="7RW-VA-qXG"/>
                             <constraint firstItem="I9G-Lh-n3h" firstAttribute="leading" secondItem="Lwb-9s-nXk" secondAttribute="trailing" constant="20" id="KOu-jU-KHR"/>
                             <constraint firstAttribute="centerX" secondItem="Yxa-Ww-Ind" secondAttribute="centerX" id="L1R-oy-KOH"/>
                             <constraint firstItem="KFm-4g-lHo" firstAttribute="centerX" secondItem="JvL-Sf-ZPX" secondAttribute="centerX" id="Lz7-aU-5HQ"/>
@@ -898,9 +909,20 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AIf-R8-Xf1">
+                                <rect key="frame" x="120" y="293" width="81" height="161"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="PokeAlert:" destination="fLF-NW-nWK" eventType="touchUpInside" id="Z2H-73-4bw"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="AIf-R8-Xf1" firstAttribute="top" secondItem="Ssj-sd-wDw" secondAttribute="top" constant="24" id="1U8-Zr-D4M"/>
                             <constraint firstItem="vwI-ey-rkA" firstAttribute="centerY" secondItem="nlq-JJ-8Z1" secondAttribute="centerY" id="7RH-Da-f8p"/>
                             <constraint firstItem="N8u-hn-Ow5" firstAttribute="top" secondItem="Ssj-sd-wDw" secondAttribute="bottom" constant="15" id="7ad-Eh-uIe"/>
                             <constraint firstItem="N8u-hn-Ow5" firstAttribute="top" secondItem="cct-DP-VzM" secondAttribute="bottom" constant="15" id="BaG-ns-7jF"/>
@@ -968,4 +990,7 @@
         <simulatedOrientationMetrics key="orientation"/>
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
+    <inferredMetricsTieBreakers>
+        <segue reference="SR5-yc-in9"/>
+    </inferredMetricsTieBreakers>
 </document>
