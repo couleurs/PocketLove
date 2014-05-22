@@ -14,6 +14,13 @@
 
 @implementation PLGameMenuViewController
 
+- (void)awakeFromNib
+{
+    [[UILabel appearanceWhenContainedIn:[self class], nil] setFont:[UIFont fontWithName:@"pixelated" size:16.0]];
+    [[UILabel appearanceWhenContainedIn:[self class], nil] setTextColor:[UIColor blackColor]];
+    [[UILabel appearanceWhenContainedIn:[self class], nil] setTextAlignment:NSTextAlignmentCenter];
+}
+
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];

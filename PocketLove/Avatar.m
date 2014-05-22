@@ -20,7 +20,7 @@
 - (void)setLogin:(NSString *)login
 {
     _login = login;
-    NSString *urlString = [NSString stringWithFormat:@"https://torid-fire-3779.firebaseio.com/users/%@/", @"Kasey"];
+    NSString *urlString = [NSString stringWithFormat:@"https://torid-fire-3779.firebaseio.com/users/%@/", _login];
     _firebase = [[Firebase alloc] initWithUrl:urlString];
     [_firebase observeEventType:FEventTypeValue withBlock:^(FDataSnapshot *snapshot) {
         [self avatarValueChanged:snapshot];

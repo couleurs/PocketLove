@@ -506,8 +506,8 @@
 		D1BB3806191B5E68009A0423 /* Constants */ = {
 			isa = PBXGroup;
 			children = (
-				5C846A04191ADF64001A25A0 /* PLConstants.m */,
 				5C846A03191ADF64001A25A0 /* PLConstants.h */,
+				5C846A04191ADF64001A25A0 /* PLConstants.m */,
 				D1BB379A191B48A5009A0423 /* Constants.h */,
 			);
 			name = Constants;
