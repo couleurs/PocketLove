@@ -827,13 +827,17 @@
                                 <rect key="frame" x="35" y="269" width="250" height="200"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="wzQ-YN-gBu">
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="wzQ-YN-gBu">
                                 <rect key="frame" x="209" y="477" width="27" height="45"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="45" id="Ceu-VQ-3PY"/>
                                     <constraint firstAttribute="width" constant="27" id="xbA-WP-iEU"/>
                                 </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="UId-00-MC7" appends="YES" id="k5m-6v-0cR"/>
+                                </connections>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nlq-JJ-8Z1">
                                 <rect key="frame" x="245" y="530" width="55" height="30"/>
@@ -944,6 +948,11 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fem-2I-udp" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="UId-00-MC7">
+                    <connections>
+                        <action selector="tappedPhoneIcon:" destination="fLF-NW-nWK" id="exc-gw-RNl"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="-261" y="-794"/>
         </scene>

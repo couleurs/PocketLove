@@ -17,6 +17,17 @@
 
 #pragma mark - Actions
 
+- (IBAction)tappedPhoneIcon:(UITapGestureRecognizer *)sender
+{
+    if (self.avatar.isAvailableForCall) {
+        NSURL *phoneUrl = [NSURL URLWithString:[NSString  stringWithFormat:@"telprompt:%@", self.avatar.phoneNumber]];
+        
+        if ([[UIApplication sharedApplication] canOpenURL:phoneUrl]) {
+            [[UIApplication sharedApplication] openURL:phoneUrl];
+        }
+    }
+}
+
 - (IBAction)giftTapped:(UIButton *)sender
 {
     self.avatar.gift = (arc4random() % [PLConstants numGifts]) + 1;

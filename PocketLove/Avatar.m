@@ -33,7 +33,8 @@
                               @"gender": @(self.gender),
                               @"atWork": @(self.atWork),
                               @"availableForCall": @(self.isAvailableForCall),
-                              @"gift": @(self.gift)}];
+                              @"gift": @(self.gift),
+                              @"phoneNumber": self.phoneNumber}];
 }
 
 - (void)avatarValueChanged:(FDataSnapshot *)snapshot
@@ -48,6 +49,7 @@
     self.gift = [gift integerValue];
     self.atWork = [atWork boolValue];
     self.callAvailability = [availableForCall boolValue];
+    self.phoneNumber = snapshot.value[@"phoneNumber"];
     [[NSNotificationCenter defaultCenter] postNotificationName:@"MoodChanged"
                                                         object:nil];
 }
