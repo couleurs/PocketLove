@@ -13,6 +13,9 @@
 
 @property (strong, nonatomic) Avatar *avatar;
 
+//method subclass should be able to call
+- (void)updateUI;
+
 //abstract methods
 - (NSDate *)currentTime;
 - (NSString *)avatarLogin;

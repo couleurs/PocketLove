@@ -25,6 +25,15 @@
     NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
     return [userDefaults objectForKey:@"YourNameKey"];
 }
+
+#pragma mark - Gestures
+
+- (IBAction)tappedPhoneIcon:(UITapGestureRecognizer *)sender
+{
+    self.avatar.callAvailability = !self.avatar.callAvailability;
+    [self updateUI];
+}
+
 #pragma mark - Segues
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
