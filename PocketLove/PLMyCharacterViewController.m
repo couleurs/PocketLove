@@ -31,6 +31,7 @@
 - (IBAction)tappedPhoneIcon:(UITapGestureRecognizer *)sender
 {
     self.avatar.callAvailability = !self.avatar.callAvailability;
+    [self.avatar save];
     [self updateUI];
 }
 

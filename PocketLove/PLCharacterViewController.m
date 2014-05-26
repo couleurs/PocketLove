@@ -85,8 +85,6 @@
     self.avatarBodyImageView.image = [self bodyImage];
     self.avatarGiftImageView.image = [self giftImage];
     self.callAvailabilityImageView.image = [self imageForCallAvailability:self.avatar.isAvailableForCall];
-    
-
 }
 
 #pragma mark - Actions
