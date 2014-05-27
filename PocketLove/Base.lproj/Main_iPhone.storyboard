@@ -220,17 +220,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="g9P-M2-1lx">
-                                <rect key="frame" x="251" y="59" width="51" height="31"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </switch>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="At Work" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UIn-vu-wg1">
-                                <rect key="frame" x="20" y="64" width="223" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vmE-Wd-ovW">
                                 <rect key="frame" x="20" y="521" width="280" height="39"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -287,18 +276,20 @@
                                     <outlet property="delegate" destination="mlE-kR-92h" id="KSO-XI-fMK"/>
                                 </connections>
                             </collectionView>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="WbK-Lb-vqe">
+                                <rect key="frame" x="54" y="20" width="213" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <segments>
+                                    <segment title="Home"/>
+                                    <segment title="Work"/>
+                                    <segment title="Sleep"/>
+                                </segments>
+                            </segmentedControl>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="nqF-HB-H41" firstAttribute="trailing" secondItem="g9P-M2-1lx" secondAttribute="trailing" id="5Yp-Y5-wCx"/>
                             <constraint firstItem="vmE-Wd-ovW" firstAttribute="leading" secondItem="0AZ-9b-yQN" secondAttribute="leading" constant="20" symbolic="YES" id="6E7-6l-E8o"/>
-                            <constraint firstItem="nqF-HB-H41" firstAttribute="top" secondItem="UIn-vu-wg1" secondAttribute="bottom" constant="8" symbolic="YES" id="Jf0-oc-8U2"/>
-                            <constraint firstItem="nqF-HB-H41" firstAttribute="leading" secondItem="UIn-vu-wg1" secondAttribute="leading" id="Okd-gR-BjR"/>
                             <constraint firstAttribute="trailing" secondItem="vmE-Wd-ovW" secondAttribute="trailing" constant="20" symbolic="YES" id="bZi-JD-Sg9"/>
-                            <constraint firstItem="g9P-M2-1lx" firstAttribute="leading" secondItem="UIn-vu-wg1" secondAttribute="trailing" constant="8" symbolic="YES" id="dhq-rc-dcK"/>
-                            <constraint firstItem="g9P-M2-1lx" firstAttribute="centerY" secondItem="UIn-vu-wg1" secondAttribute="centerY" id="fe6-5l-FIX"/>
-                            <constraint firstItem="g9P-M2-1lx" firstAttribute="centerY" secondItem="UIn-vu-wg1" secondAttribute="centerY" id="haG-kQ-RQq"/>
-                            <constraint firstItem="UIn-vu-wg1" firstAttribute="leading" secondItem="0AZ-9b-yQN" secondAttribute="leading" constant="20" symbolic="YES" id="p6Y-Uh-Puk"/>
                             <constraint firstItem="vmE-Wd-ovW" firstAttribute="top" secondItem="nqF-HB-H41" secondAttribute="bottom" constant="8" symbolic="YES" id="qXf-P3-AGK"/>
                             <constraint firstItem="Fh3-a1-J4K" firstAttribute="top" secondItem="vmE-Wd-ovW" secondAttribute="bottom" constant="20" symbolic="YES" id="tAO-t5-l93"/>
                             <constraint firstAttribute="centerX" secondItem="nqF-HB-H41" secondAttribute="centerX" id="wcU-Rr-yP7"/>
@@ -306,8 +297,8 @@
                     </view>
                     <nil key="simulatedStatusBarMetrics"/>
                     <connections>
-                        <outlet property="atWorkSwitch" destination="g9P-M2-1lx" id="Nvd-K0-z7N"/>
                         <outlet property="moodCollectionView" destination="nqF-HB-H41" id="07s-iT-ePR"/>
+                        <outlet property="outfitControl" destination="WbK-Lb-vqe" id="icT-VQ-yBC"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="voK-76-vC8" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -852,7 +843,7 @@
                                     <segue destination="2Ot-gs-Z0G" kind="modal" id="8jV-kU-OAG"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vwI-ey-rkA">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vwI-ey-rkA">
                                 <rect key="frame" x="20" y="530" width="55" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <constraints>
@@ -971,7 +962,7 @@
         <image name="Girl_Head_Angry" width="250" height="200"/>
         <image name="Icon_Game" width="55" height="30"/>
         <image name="Icon_Gift" width="50" height="50"/>
-        <image name="Icon_Heart" width="55" height="50"/>
+        <image name="Icon_Heart" width="50" height="50"/>
         <image name="Weather_Rain" width="160" height="160"/>
         <image name="Weather_Sunny" width="160" height="160"/>
         <image name="game_over.png" width="198" height="38"/>

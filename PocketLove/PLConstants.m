@@ -25,6 +25,11 @@
     return @[@"Balloon", @"Cactus", @"Cat", @"Crown", @"Lollipop"];
 }
 
++ (NSArray *)outfitStrings
+{
+    return @[@"Home", @"Work", @"Sleep"];
+}
+
 + (NSUInteger)numGifts
 {
     return [[self giftStrings] count];

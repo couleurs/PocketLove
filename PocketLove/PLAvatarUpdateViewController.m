@@ -14,10 +14,11 @@
 @interface PLAvatarUpdateViewController () <UICollectionViewDataSource, UICollectionViewDelegate>
 
 @property (nonatomic, strong) NSMutableArray *avatarMoodImages;
+@property (nonatomic, strong) NSMutableArray *avatarOutfitImages;
 @property (nonatomic, strong) NSIndexPath *selectedIndexPath;
 @property (weak, nonatomic) IBOutlet UISwitch *callAvailabilitySwitch;
-@property (weak, nonatomic) IBOutlet UISwitch *atWorkSwitch;
 @property (weak, nonatomic) IBOutlet UICollectionView *moodCollectionView;
+@property (weak, nonatomic) IBOutlet UISegmentedControl *outfitControl;
 
 @end
 
@@ -55,7 +56,7 @@
     
     //synchronize with avatar state
     self.callAvailabilitySwitch.on = self.avatar.isAvailableForCall;
-    self.atWorkSwitch.on = self.avatar.isAtWork;
+    self.outfitControl.selectedSegmentIndex = self.avatar.outfit;
 }
 
 - (void)viewDidAppear:(BOOL)animated
@@ -73,7 +74,7 @@
 {
     if ([segue.identifier isEqualToString:@"DismissAvatarUpdate"]) {
         self.avatar.callAvailability = self.callAvailabilitySwitch.isOn;
-        self.avatar.atWork = self.atWorkSwitch.isOn;
+        self.avatar.outfit = self.outfitControl.selectedSegmentIndex;
         self.avatar.mood = self.selectedIndexPath.row;
         [self.avatar save];
     }

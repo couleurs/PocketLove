@@ -82,7 +82,7 @@
     
     //avatar
     self.avatarHeadImageView.image = [self headImageForMood:self.avatar.mood];
-    self.avatarBodyImageView.image = [self bodyImage];
+    self.avatarBodyImageView.image = [self bodyImage:self.avatar.outfit];
     self.avatarGiftImageView.image = [self giftImage];
     self.callAvailabilityImageView.image = [self imageForCallAvailability:self.avatar.isAvailableForCall];
 }
@@ -162,9 +162,10 @@
     return [UIImage imageNamed:imageName];
 }
 
-- (UIImage *)bodyImage
+- (UIImage *)bodyImage:(NSUInteger)outfit
 {
-    NSString *imageName = [NSString stringWithFormat:@"%@_Body_%@", [self stringForGender:self.avatar.gender], self.avatar.isAtWork ? @"Work" : @"Home"];
+    NSArray *outfitStrings =[PLConstants outfitStrings];
+    NSString *imageName = [NSString stringWithFormat:@"%@_Body_%@", [self stringForGender:self.avatar.gender], outfitStrings[outfit]];
     return [UIImage imageNamed:imageName];
 }
 
@@ -174,10 +175,6 @@
     return [UIImage imageNamed:imageName];
 }
 
-- (NSString *)stringForWorkStatus:(BOOL)atWork
-{
-    return atWork ? @"Work" : @"Home";
-}
 
 - (NSString *)stringForGender:(NSUInteger)gender
 {

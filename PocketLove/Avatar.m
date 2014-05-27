@@ -31,7 +31,7 @@
 {
     [self.firebase setValue:@{@"mood": @(self.mood),
                               @"gender": @(self.gender),
-                              @"atWork": @(self.atWork),
+                              @"outfit": @(self.outfit),
                               @"availableForCall": @(self.isAvailableForCall),
                               @"gift": @(self.gift),
                               @"phoneNumber": self.phoneNumber}];
@@ -41,13 +41,13 @@
 {
     NSNumber *mood = snapshot.value[@"mood"];
     NSNumber *gender = snapshot.value[@"gender"];
-    NSNumber *atWork = snapshot.value[@"atWork"];
+    NSNumber *outfit = snapshot.value[@"outfit"];
     NSNumber *availableForCall = snapshot.value[@"availableForCall"];
     NSNumber *gift = snapshot.value[@"gift"];
     self.mood = [mood integerValue];
     self.gender = [gender integerValue];
     self.gift = [gift integerValue];
-    self.atWork = [atWork boolValue];
+    self.outfit = [outfit integerValue];
     self.callAvailability = [availableForCall boolValue];
     self.phoneNumber = snapshot.value[@"phoneNumber"];
     [[NSNotificationCenter defaultCenter] postNotificationName:@"MoodChanged"

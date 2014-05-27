@@ -15,7 +15,7 @@
 
 @implementation PLOtherCharacterViewController
 
-#pragma mark - Actions
+#pragma mark - Actionsiin
 
 - (IBAction)tappedPhoneIcon:(UITapGestureRecognizer *)sender
 {
