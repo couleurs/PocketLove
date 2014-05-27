@@ -26,7 +26,7 @@
             [[UIApplication sharedApplication] openURL:phoneUrl];
         }
     } else {
-        [[[UIAlertView alloc] initWithTitle:@"Sorry" message:@"They are not available for a call right now" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil] show];
+        [[[UIAlertView alloc] initWithTitle:@"Sorry!" message:@"I can't talk right now! :(" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil] show];
     }
 }
 
