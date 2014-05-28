@@ -35,6 +35,22 @@
     [self updateUI];
 }
 
+#pragma mark - Text Field delegate
+
+#define MAX_NUM_CHARACTERS 38
+
+- (BOOL)textFieldShouldReturn:(UITextField *)textField
+{
+    if ([textField.text length] > MAX_NUM_CHARACTERS) {
+        textField.text = [textField.text substringToIndex:MAX_NUM_CHARACTERS];
+    }
+    
+    [textField resignFirstResponder];
+    self.avatar.currentThought = textField.text;
+    [self.avatar save];
+    return YES;
+}
+
 #pragma mark - Segues
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender

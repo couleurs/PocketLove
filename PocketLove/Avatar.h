@@ -12,6 +12,7 @@
 
 @property (nonatomic) NSString *login;
 @property (nonatomic) NSString *phoneNumber;
+@property (nonatomic) NSString *currentThought;
 @property (nonatomic) NSUInteger mood; //0-6
 @property (nonatomic) NSUInteger outfit; //0-2
 @property (nonatomic) NSUInteger gender; //0 for boy, 1 for girl

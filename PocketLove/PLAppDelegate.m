@@ -15,9 +15,9 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
-    [[UILabel appearance] setFont:[UIFont fontWithName:@"pixelated" size:32.0]];
-    [[UILabel appearance] setTextColor:[UIColor whiteColor]];
-    
+//    [[UILabel appearance] setFont:[UIFont fontWithName:@"pixelated" size:32.0]];
+//    [[UILabel appearance] setTextColor:[UIColor whiteColor]];
+//    
     return YES;
 }
 							

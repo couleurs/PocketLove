@@ -34,7 +34,8 @@
                               @"outfit": @(self.outfit),
                               @"availableForCall": @(self.isAvailableForCall),
                               @"gift": @(self.gift),
-                              @"phoneNumber": self.phoneNumber}];
+                              @"phoneNumber": self.phoneNumber,
+                              @"currentThought": self.currentThought}];
 }
 
 - (void)avatarValueChanged:(FDataSnapshot *)snapshot
@@ -50,7 +51,8 @@
     self.outfit = [outfit integerValue];
     self.callAvailability = [availableForCall boolValue];
     self.phoneNumber = snapshot.value[@"phoneNumber"];
-    [[NSNotificationCenter defaultCenter] postNotificationName:@"MoodChanged"
+    self.currentThought = snapshot.value[@"currentThought"];
+    [[NSNotificationCenter defaultCenter] postNotificationName:@"AvatarUpdate"
                                                         object:nil];
 }
 

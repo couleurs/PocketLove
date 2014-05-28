@@ -11,6 +11,7 @@
 
 @interface PLCharacterViewController ()
 
+@property (weak, nonatomic) IBOutlet UILabel *weatherLabel;
 @property (weak, nonatomic) IBOutlet UILabel *timeLabel;
 @property (weak, nonatomic) IBOutlet UIImageView *callAvailabilityImageView;
 @property (weak, nonatomic) IBOutlet UILabel *nicknameLabel;
@@ -18,7 +19,7 @@
 @property (weak, nonatomic) IBOutlet UIImageView *avatarHeadImageView;
 @property (weak, nonatomic) IBOutlet UIImageView *avatarGiftImageView;
 @property (weak, nonatomic) IBOutlet UIActivityIndicatorView *spinner;
-
+@property (weak, nonatomic) IBOutlet UITextField *thoughtTextField;
 
 @end
 
@@ -42,32 +43,43 @@
 
 - (void)viewWillAppear:(BOOL)animated
 {
+    [super viewWillAppear:animated];
     [self initializeAvatar];
+    [[NSNotificationCenter defaultCenter] addObserver:self
+                                             selector:@selector(updateUI)
+                                                 name:@"AvatarUpdate"
+                                               object:nil];
 }
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
     self.view.backgroundColor = [PLConstants backgroundColor];
+    [self setupLabels];
+    
     [self setAvatarHidden:YES];
     
     [[NSNotificationCenter defaultCenter] addObserver:self
                                              selector:@selector(initializeAvatar)
                                                  name:@"LoginReady"
                                                object:nil];
-    [[NSNotificationCenter defaultCenter] addObserver:self
-                                             selector:@selector(updateUI)
-                                                 name:@"MoodChanged"
-                                               object:nil];
-    
+}
+
+- (void)viewWillDisappear:(BOOL)animated
+{
+    [super viewWillDisappear:animated];
+    [[NSNotificationCenter defaultCenter] removeObserver:self
+                                                    name:@"AvatarUpdate"
+                                                  object:nil];
 }
 
 - (void)initializeAvatar
 {
     NSString *avatarLogin = [self avatarLogin];
     
-    if (avatarLogin)
+    if (avatarLogin) {
         self.avatar.login = avatarLogin;
+    }
 }
 
 - (void)updateUI
@@ -79,6 +91,9 @@
     [self.timeLabel sizeToFit];
     self.nicknameLabel.text = self.avatar.login;
     [self.nicknameLabel sizeToFit];
+    
+    //thought
+    self.thoughtTextField.text = self.avatar.currentThought;
     
     //avatar
     self.avatarHeadImageView.image = [self headImageForMood:self.avatar.mood];
@@ -190,5 +205,19 @@
     if (!hidden)
         [self.spinner stopAnimating];
 }
+
+- (void)setupLabels
+{
+    [self.nicknameLabel setFont:[UIFont fontWithName:@"pixelated" size:32.0]];
+    [self.timeLabel setFont:[UIFont fontWithName:@"pixelated" size:32.0]];
+    [self.weatherLabel setFont:[UIFont fontWithName:@"pixelated" size:26.0]];
+    [self.thoughtTextField setFont:[UIFont fontWithName:@"pixelated" size:16.0]];
+    
+    [self.nicknameLabel setTextColor:[UIColor whiteColor]];
+    [self.timeLabel setTextColor:[UIColor whiteColor]];
+    [self.weatherLabel setTextColor:[UIColor whiteColor]];
+    [self.thoughtTextField setTextColor:[UIColor blackColor]];
+}
+
 
 @end

@@ -8,6 +8,6 @@
 
 #import "PLCharacterViewController.h"
 
-@interface PLMyCharacterViewController : PLCharacterViewController 
+@interface PLMyCharacterViewController : PLCharacterViewController<UITextFieldDelegate>
 
 @end
