@@ -93,7 +93,9 @@
     [self.nicknameLabel sizeToFit];
     
     //thought
-    self.thoughtTextField.text = self.avatar.currentThought;
+    if (!self.thoughtTextField.isEditing) {
+        self.thoughtTextField.text = self.avatar.currentThought;
+    }
     
     //avatar
     self.avatarHeadImageView.image = [self headImageForMood:self.avatar.mood];
