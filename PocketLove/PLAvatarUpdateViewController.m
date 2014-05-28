@@ -145,6 +145,25 @@
     cell.layer.borderWidth = 0.0f;
 }
 
+- (UICollectionReusableView *)collectionView:(UICollectionView *)collectionView viewForSupplementaryElementOfKind:(NSString *)kind atIndexPath:(NSIndexPath *)indexPath {
+    // Will crash if return nil
+    
+    UICollectionReusableView *view = nil;
+    if ([kind isEqualToString:UICollectionElementKindSectionHeader])
+    {
+        NSString *reuseIdentifier = (collectionView == self.moodCollectionView) ? @"MoodHeader" : @"OutfitHeader";
+        view = [collectionView dequeueReusableSupplementaryViewOfKind:kind
+                                                                              withReuseIdentifier:reuseIdentifier forIndexPath:indexPath];
+    }
+    
+    else if ([kind isEqualToString:UICollectionElementKindSectionFooter])
+    {
+        view = [collectionView dequeueReusableSupplementaryViewOfKind:kind
+                                                                              withReuseIdentifier:@"OutfitFooter" forIndexPath:indexPath];
+    }
+    return view;
+}
+
 #pragma mark - Privates
 
 - (void)highlightCellAtIndexPath:(NSIndexPath *)indexPath
