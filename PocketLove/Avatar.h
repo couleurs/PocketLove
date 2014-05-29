@@ -17,6 +17,7 @@
 @property (nonatomic) NSUInteger outfit; //0-2
 @property (nonatomic) NSUInteger gender; //0 for boy, 1 for girl
 @property (nonatomic) NSUInteger gift; //0-6, 0 for no gift
+@property (nonatomic) NSUInteger hugRecieved; //0 for no hug, 1 for hug
 @property (nonatomic, getter = isAvailableForCall) BOOL callAvailability;
 
 - (void)save; //send data to Firebase

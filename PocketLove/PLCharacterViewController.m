@@ -102,6 +102,21 @@
     self.avatarBodyImageView.image = [self bodyImage:self.avatar.outfit];
     self.avatarGiftImageView.image = [self giftImage];
     self.callAvailabilityImageView.image = [self imageForCallAvailability:self.avatar.isAvailableForCall];
+    
+    if (self.avatar.hugRecieved == 1) {
+        AudioServicesPlayAlertSound(kSystemSoundID_Vibrate);
+        self.avatarHeadImageView.image = [UIImage imageNamed:@"Action_Hug"];
+        self.avatarBodyImageView.hidden = YES;
+        self.avatarGiftImageView.hidden = YES;
+        
+        [NSTimer scheduledTimerWithTimeInterval:2.0
+                                         target:self
+                                       selector:@selector(over:)
+                                       userInfo:nil
+                                        repeats:NO];
+    
+    }
+    
 }
 
 #pragma mark - Actions
@@ -120,12 +135,13 @@
     self.avatarHeadImageView.image = [UIImage imageNamed:@"Action_Hug"];
     self.avatarBodyImageView.hidden = YES;
     self.avatarGiftImageView.hidden = YES;
-
+    
     [NSTimer scheduledTimerWithTimeInterval:2.0
                                      target:self
                                    selector:@selector(over:)
                                    userInfo:nil
                                     repeats:NO];
+    
 }
 
 - (void)hugOver:(NSTimer *)timer
@@ -137,6 +153,8 @@
     self.avatarHeadImageView.image = [self headImageForMood:self.avatar.mood];
     self.avatarBodyImageView.hidden = NO;
     self.avatarGiftImageView.hidden = NO;
+    self.avatar.hugRecieved = 0;
+    [self.avatar save];
 }
 
 
