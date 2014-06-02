@@ -22,7 +22,7 @@
 
 + (NSArray *)giftStrings
 {
-    return @[@"Balloon", @"Cactus", @"Cat", @"Crown", @"Lollipop"];
+    return @[@"Balloon", @"Cactus", @"Cat", @"Crown", @"Lollipop", @"Umbrella"];
 }
 
 + (NSArray *)outfitStrings

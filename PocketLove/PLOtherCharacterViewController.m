@@ -39,6 +39,7 @@
 - (IBAction)giftTapped:(UIButton *)sender
 {
     self.avatar.gift = (arc4random() % [PLConstants numGifts]) + 1;
+    self.avatar.giftRecieved = 1;
     [self.avatar save];
     
 }

@@ -36,7 +36,8 @@
                               @"gift": @(self.gift),
                               @"phoneNumber": self.phoneNumber,
                               @"currentThought": self.currentThought,
-                              @"hugRecieved": @(self.hugRecieved)}];
+                              @"hugRecieved": @(self.hugRecieved),
+                              @"giftRecieved": @(self.giftRecieved)}];
 }
 
 - (void)avatarValueChanged:(FDataSnapshot *)snapshot
@@ -47,12 +48,14 @@
     NSNumber *availableForCall = snapshot.value[@"availableForCall"];
     NSNumber *gift = snapshot.value[@"gift"];
     NSNumber *hugRecieved = snapshot.value[@"hugRecieved"];
+    NSNumber *giftRecieved = snapshot.value[@"giftRecieved"];
     self.mood = [mood integerValue];
     self.gender = [gender integerValue];
     self.gift = [gift integerValue];
     self.outfit = [outfit integerValue];
     self.callAvailability = [availableForCall boolValue];
     self.hugRecieved = [hugRecieved integerValue];
+    self.giftRecieved = [giftRecieved integerValue];
     self.phoneNumber = snapshot.value[@"phoneNumber"];
     self.currentThought = snapshot.value[@"currentThought"];
     [[NSNotificationCenter defaultCenter] postNotificationName:@"AvatarUpdate"

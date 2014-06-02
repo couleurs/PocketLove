@@ -18,6 +18,7 @@
 @property (weak, nonatomic) IBOutlet UIImageView *avatarBodyImageView;
 @property (weak, nonatomic) IBOutlet UIImageView *avatarHeadImageView;
 @property (weak, nonatomic) IBOutlet UIImageView *avatarGiftImageView;
+@property (weak, nonatomic) IBOutlet UIImageView *avatarGiftNotificationImageView;
 @property (weak, nonatomic) IBOutlet UIActivityIndicatorView *spinner;
 @property (weak, nonatomic) IBOutlet UITextField *thoughtTextField;
 
@@ -114,7 +115,18 @@
                                        selector:@selector(over:)
                                        userInfo:nil
                                         repeats:NO];
+        
+    }
     
+    if (self.avatar.giftRecieved == 1) {
+        AudioServicesPlayAlertSound(kSystemSoundID_Vibrate);
+        self.avatarGiftNotificationImageView.hidden = NO;
+        
+        [NSTimer scheduledTimerWithTimeInterval:2.0
+                                         target:self
+                                       selector:@selector(giftOver:)
+                                       userInfo:nil
+                                        repeats:NO];
     }
     
 }
@@ -154,6 +166,12 @@
     self.avatarBodyImageView.hidden = NO;
     self.avatarGiftImageView.hidden = NO;
     self.avatar.hugRecieved = 0;
+    [self.avatar save];
+}
+
+- (void)giftOver:(NSTimer *)timer {
+    self.avatarGiftNotificationImageView.hidden = YES;
+    self.avatar.giftRecieved = 0;
     [self.avatar save];
 }
 

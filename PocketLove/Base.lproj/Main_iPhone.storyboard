@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="13C64" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="I8o-MA-oXT">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="13D65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="I8o-MA-oXT">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
     </dependencies>
@@ -102,6 +102,10 @@
                                     <outlet property="delegate" destination="vXZ-lx-hvc" id="Suv-OH-pmc"/>
                                 </connections>
                             </textField>
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Icon_Gift_Exclamation" translatesAutoresizingMaskIntoConstraints="NO" id="1Pg-Y8-VyN">
+                                <rect key="frame" x="134" y="530" width="53" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -110,6 +114,7 @@
                             <constraint firstAttribute="trailing" secondItem="X7q-td-Lly" secondAttribute="trailing" constant="20" id="2Va-i1-i5J"/>
                             <constraint firstItem="rBF-ap-Acd" firstAttribute="leading" secondItem="KFm-4g-lHo" secondAttribute="trailing" constant="8" symbolic="YES" id="3Qm-Gj-xmk"/>
                             <constraint firstItem="KFm-4g-lHo" firstAttribute="top" secondItem="Bvn-4l-8Hm" secondAttribute="bottom" constant="15" id="6Td-87-zEJ"/>
+                            <constraint firstAttribute="centerX" secondItem="1Pg-Y8-VyN" secondAttribute="centerX" id="BBS-kk-bEQ"/>
                             <constraint firstItem="dB8-A8-ZWg" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="35" id="CEl-7x-ihm"/>
                             <constraint firstAttribute="centerX" secondItem="Yxa-Ww-Ind" secondAttribute="centerX" id="L1R-oy-KOH"/>
                             <constraint firstAttribute="trailing" secondItem="dB8-A8-ZWg" secondAttribute="trailing" constant="35" id="NmV-X9-bQh"/>
@@ -127,9 +132,11 @@
                             <constraint firstAttribute="centerX" secondItem="w6h-MA-Gs5" secondAttribute="centerX" id="axe-6j-sN9"/>
                             <constraint firstAttribute="centerX" secondItem="Jhh-pg-ey9" secondAttribute="centerX" id="bBr-m6-ZTR"/>
                             <constraint firstItem="rBF-ap-Acd" firstAttribute="bottom" secondItem="KFm-4g-lHo" secondAttribute="bottom" id="bCR-Ne-rBz"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="1Pg-Y8-VyN" secondAttribute="bottom" constant="8" id="bVW-b2-8V5"/>
                             <constraint firstAttribute="centerX" secondItem="dB8-A8-ZWg" secondAttribute="centerX" id="cMq-lc-uo3"/>
                             <constraint firstItem="Lwb-9s-nXk" firstAttribute="top" secondItem="w6h-MA-Gs5" secondAttribute="bottom" constant="8" id="fyF-6S-QKY"/>
                             <constraint firstItem="Bvn-4l-8Hm" firstAttribute="centerX" secondItem="H0n-Ew-VuD" secondAttribute="centerX" constant="-0.5" id="g85-tW-txr"/>
+                            <constraint firstItem="1Pg-Y8-VyN" firstAttribute="top" secondItem="KFm-4g-lHo" secondAttribute="bottom" constant="8" symbolic="YES" id="h9q-L7-FW1"/>
                             <constraint firstAttribute="centerY" secondItem="KVf-kC-gPN" secondAttribute="centerY" constant="0.5" id="qS4-pJ-d4y"/>
                             <constraint firstItem="X7q-td-Lly" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="20" id="sNh-dp-eva"/>
                             <constraint firstItem="I9G-Lh-n3h" firstAttribute="centerY" secondItem="Lwb-9s-nXk" secondAttribute="centerY" id="xSM-8o-lgV"/>
@@ -140,6 +147,7 @@
                     <connections>
                         <outlet property="avatarBodyImageView" destination="Jhh-pg-ey9" id="zTp-de-uEI"/>
                         <outlet property="avatarGiftImageView" destination="Yxa-Ww-Ind" id="qqM-RC-qBj"/>
+                        <outlet property="avatarGiftNotificationImageView" destination="1Pg-Y8-VyN" id="AUH-9i-PSZ"/>
                         <outlet property="avatarHeadImageView" destination="Bvn-4l-8Hm" id="Foz-a4-fhf"/>
                         <outlet property="callAvailabilityImageView" destination="rBF-ap-Acd" id="pBM-Lc-Cbz"/>
                         <outlet property="nicknameLabel" destination="w6h-MA-Gs5" id="3sF-Ch-GaT"/>
@@ -1094,6 +1102,7 @@
         <image name="Icon_Done" width="100" height="43"/>
         <image name="Icon_Game" width="55" height="30"/>
         <image name="Icon_Gift" width="50" height="50"/>
+        <image name="Icon_Gift_Exclamation" width="53" height="53"/>
         <image name="Icon_Heart" width="50" height="50"/>
         <image name="Icon_Thought_Bubble_2" width="97" height="33"/>
         <image name="Weather_Rain" width="160" height="160"/>
