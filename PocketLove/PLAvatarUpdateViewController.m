@@ -25,6 +25,13 @@
 
 @implementation PLAvatarUpdateViewController
 
+- (void)awakeFromNib
+{
+    [[UILabel appearanceWhenContainedIn:[self class], nil] setFont:[UIFont fontWithName:@"pixelated" size:24.0]];
+    [[UILabel appearanceWhenContainedIn:[self class], nil] setTextColor:[UIColor whiteColor]];
+    [[UILabel appearanceWhenContainedIn:[self class], nil] setTextAlignment:NSTextAlignmentCenter];
+}
+
 - (void)setMoodCollectionView:(UICollectionView *)moodCollectionView
 {
     _moodCollectionView = moodCollectionView;
@@ -71,7 +78,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
-    self.view.backgroundColor = [PLConstants backgroundColor];
+    self.view.backgroundColor = [PLConstants backgroundColorLight];
     
     //synchronize with avatar state
     //self.callAvailabilitySwitch.on = self.avatar.isAvailableForCall;

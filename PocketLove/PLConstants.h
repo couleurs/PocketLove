@@ -10,7 +10,8 @@
 
 @interface PLConstants : NSObject
 
-+ (UIColor *)backgroundColor;
++ (UIColor *)backgroundColorLight;
++ (UIColor *)backgroundColorDark;
 + (NSArray *)moodStrings;
 + (NSArray *)giftStrings;
 + (NSArray *)outfitStrings;
