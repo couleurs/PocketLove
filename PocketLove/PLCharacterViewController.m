@@ -54,7 +54,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    self.view.backgroundColor = [PLConstants backgroundColor];
+    self.view.backgroundColor = [PLConstants backgroundColorLight];
     [self setupLabels];
     
     [self setAvatarHidden:YES];
