@@ -17,7 +17,7 @@
 @property (nonatomic, strong) NSMutableArray *avatarOutfitImages;
 @property (nonatomic, strong) NSIndexPath *moodSelectedIndexPath;
 @property (nonatomic, strong) NSIndexPath *outfitSelectedIndexPath;
-@property (weak, nonatomic) IBOutlet UISwitch *callAvailabilitySwitch;
+//@property (weak, nonatomic) IBOutlet UISwitch *callAvailabilitySwitch;
 @property (weak, nonatomic) IBOutlet UICollectionView *moodCollectionView;
 @property (weak, nonatomic) IBOutlet UICollectionView *outfitCollectionView;
 
@@ -81,7 +81,7 @@
     self.view.backgroundColor = [PLConstants backgroundColorLight];
     
     //synchronize with avatar state
-    self.callAvailabilitySwitch.on = self.avatar.isAvailableForCall;
+    //self.callAvailabilitySwitch.on = self.avatar.isAvailableForCall;
 }
 
 - (void)viewDidAppear:(BOOL)animated
@@ -104,7 +104,7 @@
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
     if ([segue.identifier isEqualToString:@"DismissAvatarUpdate"]) {
-        self.avatar.callAvailability = self.callAvailabilitySwitch.isOn;
+        //self.avatar.callAvailability = self.callAvailabilitySwitch.isOn;
         self.avatar.outfit = self.outfitSelectedIndexPath.row;
         self.avatar.mood = self.moodSelectedIndexPath.row;
         [self.avatar save];

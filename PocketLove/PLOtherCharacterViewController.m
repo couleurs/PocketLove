@@ -30,10 +30,17 @@
     }
 }
 
+- (IBAction)hugTapped:(UIButton *)sender
+{
+    self.avatar.hugRecieved = 1;
+    [self.avatar save];
+}
+
 - (IBAction)giftTapped:(UIButton *)sender
 {
     self.avatar.gift = (arc4random() % [PLConstants numGifts]) + 1;
     [self.avatar save];
+    
 }
 
 - (NSDate *)currentTime
