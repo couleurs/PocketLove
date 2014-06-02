@@ -38,6 +38,7 @@
 		5CE2603C1922EAAC00AA77DD /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5CE2603B1922EAAC00AA77DD /* CFNetwork.framework */; };
 		5CE2603E1922EAB100AA77DD /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5CE2603D1922EAB100AA77DD /* Security.framework */; };
 		5CE260401922EAC000AA77DD /* libicucore.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 5CE2603F1922EAC000AA77DD /* libicucore.dylib */; };
+		5CEE1250193D1AC200C898DB /* NSDate+PL.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CEE124F193D1AC200C898DB /* NSDate+PL.m */; };
 		D1BB379D191B48FC009A0423 /* Score.m in Sources */ = {isa = PBXBuildFile; fileRef = D1BB379C191B48FC009A0423 /* Score.m */; };
 		D1BB37A0191B492B009A0423 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D1BB379F191B492B009A0423 /* ViewController.m */; };
 		D1BB37A5191B49EE009A0423 /* Scene.m in Sources */ = {isa = PBXBuildFile; fileRef = D1BB37A4191B49EE009A0423 /* Scene.m */; };
@@ -132,6 +133,8 @@
 		5CE2603B1922EAAC00AA77DD /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		5CE2603D1922EAB100AA77DD /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		5CE2603F1922EAC000AA77DD /* libicucore.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libicucore.dylib; path = usr/lib/libicucore.dylib; sourceTree = SDKROOT; };
+		5CEE124E193D1AC200C898DB /* NSDate+PL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+PL.h"; sourceTree = "<group>"; };
+		5CEE124F193D1AC200C898DB /* NSDate+PL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+PL.m"; sourceTree = "<group>"; };
 		D1BB3799191B488B009A0423 /* Macros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Macros.h; sourceTree = "<group>"; };
 		D1BB379A191B48A5009A0423 /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
 		D1BB379B191B48FC009A0423 /* Score.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Score.h; sourceTree = "<group>"; };
@@ -347,6 +350,8 @@
 		5CA188901919E426001130BB /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				5CEE124E193D1AC200C898DB /* NSDate+PL.h */,
+				5CEE124F193D1AC200C898DB /* NSDate+PL.m */,
 				D1BB379B191B48FC009A0423 /* Score.h */,
 				D1BB379C191B48FC009A0423 /* Score.m */,
 				5CA188911919E444001130BB /* Avatar.h */,
@@ -648,6 +653,7 @@
 				5CA1889C1919F29E001130BB /* ImageCollectionViewCell.m in Sources */,
 				5C975AE31923E9D700598912 /* PLLoginViewController.m in Sources */,
 				D1BB37AB191B4A18009A0423 /* SKScrollingNode.m in Sources */,
+				5CEE1250193D1AC200C898DB /* NSDate+PL.m in Sources */,
 				D1BB37A0191B492B009A0423 /* ViewController.m in Sources */,
 				D1BB37D4191B52CE009A0423 /* PLGameMenuViewController.m in Sources */,
 				D1BB37FF191B5D1C009A0423 /* M2Overlay.m in Sources */,

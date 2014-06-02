@@ -8,6 +8,7 @@
 #import <AudioToolbox/AudioToolbox.h>
 #import "PLCharacterViewController.h"
 #import "PLConstants.h"
+#import "NSDate+PL.h"
 
 @interface PLCharacterViewController ()
 
@@ -49,12 +50,13 @@
                                              selector:@selector(updateUI)
                                                  name:@"AvatarUpdate"
                                                object:nil];
+    
+    self.view.backgroundColor = [self backgroundColor];
 }
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    self.view.backgroundColor = [PLConstants backgroundColorLight];
     [self setupLabels];
     
     [self setAvatarHidden:YES];
@@ -219,6 +221,60 @@
     [self.timeLabel setTextColor:[UIColor whiteColor]];
     [self.weatherLabel setTextColor:[UIColor whiteColor]];
     [self.thoughtTextField setTextColor:[UIColor blackColor]];
+}
+
+#define LIGHTEST_HOUR 12
+#define DARKEST_HOUR 2
+
+- (UIColor *)backgroundColor
+{
+    //Gets lighter at 6am, darker at 6p
+    NSDate *currentTime = [self currentTime];
+    
+    NSDate *morningTime = [currentTime dateWithHour:DARKEST_HOUR
+                                             minute:0
+                                             second:0];
+    
+    NSDate *eveningTime = [currentTime dateWithHour:LIGHTEST_HOUR
+                                             minute:0
+                                             second:0];
+    
+    UIColor *bgColor;
+    
+    CGFloat lightRed, lightGreen, lightBlue;
+    CGFloat darkRed, darkGreen, darkBlue;
+    UIColor *lightColor = [PLConstants backgroundColorLight];
+    UIColor *darkColor = [PLConstants backgroundColorDark];
+    
+    [lightColor getRed:&lightRed green:&lightGreen blue:&lightBlue alpha:NULL];
+    [darkColor getRed:&darkRed green:&darkGreen blue:&darkBlue alpha:NULL];
+    
+    NSDateComponents *todayComps = [[NSCalendar currentCalendar] components:NSHourCalendarUnit
+                                                                   fromDate:currentTime];
+    
+    //before 6p
+    if ([currentTime compare:eveningTime] == NSOrderedAscending) {
+        
+        float t = (float)(todayComps.hour - DARKEST_HOUR) / (float)(LIGHTEST_HOUR - DARKEST_HOUR);
+        
+        bgColor = [UIColor colorWithRed:(1-t) * darkRed + t * lightRed
+                                  green:(1-t) * darkGreen + t * lightGreen
+                                   blue:(1-t) * darkBlue + t * lightBlue
+                                  alpha:1.0];
+
+    }
+    
+    //after
+    else {
+        float t = (float)(todayComps.hour - LIGHTEST_HOUR) / (float)(LIGHTEST_HOUR - DARKEST_HOUR);
+        
+        bgColor = [UIColor colorWithRed:(1-t) * lightRed + t * darkRed
+                                  green:(1-t) * lightGreen + t * darkGreen
+                                   blue:(1-t) * lightBlue + t * darkBlue
+                                  alpha:1.0];
+    }
+    
+    return bgColor;
 }
 
 
