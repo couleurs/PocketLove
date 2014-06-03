@@ -71,7 +71,7 @@
                                 <rect key="frame" x="142" y="265" width="37" height="37"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </activityIndicatorView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Weather_Rain" translatesAutoresizingMaskIntoConstraints="NO" id="Lwb-9s-nXk">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Weather_Sunny" translatesAutoresizingMaskIntoConstraints="NO" id="Lwb-9s-nXk">
                                 <rect key="frame" x="20" y="66" width="35" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <constraints>
@@ -79,7 +79,7 @@
                                     <constraint firstAttribute="width" constant="35" id="zCA-VA-1UB"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="New York 63°F" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I9G-Lh-n3h">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Stanford 73°F" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I9G-Lh-n3h">
                                 <rect key="frame" x="107" y="73" width="107" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -989,7 +989,7 @@
                                 <rect key="frame" x="143" y="265" width="37" height="37"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </activityIndicatorView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Weather_Sunny" translatesAutoresizingMaskIntoConstraints="NO" id="DDi-QO-mNc">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Weather_Thunder" translatesAutoresizingMaskIntoConstraints="NO" id="DDi-QO-mNc">
                                 <rect key="frame" x="20" y="66" width="35" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <constraints>
@@ -997,7 +997,7 @@
                                     <constraint firstAttribute="width" constant="35" id="p3h-hs-MDs"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Stanford 81°F" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zzU-tb-EuQ">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="New York 78°F" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zzU-tb-EuQ">
                                 <rect key="frame" x="103" y="73" width="114" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -1105,8 +1105,8 @@
         <image name="Icon_Gift_Exclamation" width="53" height="53"/>
         <image name="Icon_Heart" width="50" height="50"/>
         <image name="Icon_Thought_Bubble_2" width="97" height="33"/>
-        <image name="Weather_Rain" width="160" height="160"/>
         <image name="Weather_Sunny" width="160" height="160"/>
+        <image name="Weather_Thunder" width="160" height="160"/>
         <image name="game_over.png" width="198" height="38"/>
         <image name="get_ready.png" width="130" height="40"/>
         <image name="medal_bronze.png" width="44" height="44"/>

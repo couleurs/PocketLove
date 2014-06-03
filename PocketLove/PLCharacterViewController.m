@@ -121,10 +121,10 @@
     }
     
     if (self.avatar.giftRecieved == 1) {
-        AudioServicesPlayAlertSound(kSystemSoundID_Vibrate);
+        AudioServicesPlaySystemSound(1004);
         self.avatarGiftNotificationImageView.hidden = NO;
         
-        [NSTimer scheduledTimerWithTimeInterval:2.0
+        [NSTimer scheduledTimerWithTimeInterval:3.0
                                          target:self
                                        selector:@selector(giftOver:)
                                        userInfo:nil
